@@ -9,7 +9,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}
+  IMAGE_NAME: claire1940/shipany-template
   SVR_NAME: ${{ github.event.repository.name }}
 
 jobs:

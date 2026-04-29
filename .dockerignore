@@ -2,6 +2,8 @@
 .vercel
 .vscode
 .wrangler
+.env
+.env.*
 data
 debug
 node_modules
