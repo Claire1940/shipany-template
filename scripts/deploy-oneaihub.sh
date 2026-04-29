@@ -5,11 +5,11 @@ APP_DIR="/root/Documents/AIProjects/shipany-template"
 ENV_FILE="${APP_DIR}/.env.docker"
 DATA_DIR="${APP_DIR}/data"
 DB_FILE="${DATA_DIR}/local.db"
-CONTAINER_NAME="aiwallpaper-best"
+CONTAINER_NAME="oneaihub-online"
 IMAGE="ghcr.io/claire1940/shipany-template:main"
-DOMAIN="aiwallpaper.best"
-ROUTER_NAME="aiwallpaper-best"
-SERVICE_NAME="aiwallpaper-best"
+DOMAIN="oneaihub.online"
+ROUTER_NAME="oneaihub-online"
+SERVICE_NAME="oneaihub-online"
 SYSTEMD_SERVICE="shipany-template.service"
 
 if [ ! -f "${ENV_FILE}" ]; then
@@ -40,6 +40,8 @@ docker pull "${IMAGE}"
 if systemctl list-unit-files "${SYSTEMD_SERVICE}" >/dev/null 2>&1; then
   systemctl stop "${SYSTEMD_SERVICE}" || true
 fi
+
+docker rm -f aiwallpaper-best >/dev/null 2>&1 || true
 
 chown -R 1001:1001 "${DATA_DIR}"
 
