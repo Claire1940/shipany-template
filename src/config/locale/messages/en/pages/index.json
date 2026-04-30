@@ -2,101 +2,96 @@
   "page": {
     "show_sections": [
       "hero",
-      "logos",
       "introduce",
-      "benefits",
-      "usage",
       "features",
-      "stats",
-      "testimonials",
       "faq",
       "cta"
     ],
     "sections": {
       "hero": {
         "id": "hero",
-        "title": "Ship AI Startups in hours, not days",
-        "highlight_text": "in hours",
-        "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups.<br/>Ship Fast with a variety of templates and components.",
+        "title": "All-in-One AI Platform for Chat, Images, and Music",
+        "highlight_text": "All-in-One AI",
+        "description": "Use OneAIHub to chat with AI, generate images, create music, and manage creative AI workflows in one place.",
         "announcement": {
           "badge": "New",
-          "title": "🎉 ShipAny Template Two",
-          "url": "/pricing"
+          "title": "OneAIHub brings chat, image, and music AI tools together",
+          "url": "/chat"
         },
-        "tip": "🎁 Special offer for the first 1000 users",
+        "tip": "Start creating with free credits, then upgrade when you need more.",
         "buttons": [
           {
-            "title": "Get Started",
+            "title": "Start Creating",
             "icon": "Zap",
-            "url": "/pricing",
+            "url": "/chat",
             "target": "_self",
             "variant": "default"
           },
           {
-            "title": "Read Document",
-            "icon": "BookOpenText",
-            "url": "/docs",
-            "target": "_blank",
+            "title": "Explore AI Tools",
+            "icon": "Sparkles",
+            "url": "#features",
+            "target": "_self",
             "variant": "outline"
           }
         ],
         "show_avatars": true,
-        "avatars_tip": "999+ users are using ShipAny",
+        "avatars_tip": "Create with AI chat, images, and music in one workspace",
         "show_award": false,
         "image": {
           "src": "/imgs/features/admin.png",
-          "alt": "hero",
+          "alt": "OneAIHub workspace preview",
           "width": 1200,
           "height": 800
         },
         "image_invert": {
           "src": "/imgs/features/admin-dark.png",
-          "alt": "hero",
+          "alt": "OneAIHub dark workspace preview",
           "width": 1200,
           "height": 800
         },
         "background_image": {
           "src": "/imgs/bg/tree.jpg",
-          "alt": "hero"
+          "alt": "OneAIHub hero background"
         }
       },
       "logos": {
         "id": "logos",
-        "title": "ShipAny is built on the shoulders of giants",
+        "title": "OneAIHub connects essential AI creation tools",
         "items": [
           {
-            "title": "Next.js",
+            "title": "AI Chat",
             "image": {
               "src": "/imgs/logos/nextjs.svg",
-              "alt": "Next.js"
+              "alt": "AI Chat"
             }
           },
           {
-            "title": "React",
+            "title": "AI Image",
             "image": {
               "src": "/imgs/logos/react.svg",
-              "alt": "React"
+              "alt": "AI Image"
             }
           },
           {
-            "title": "TailwindCSS",
+            "title": "AI Music",
             "image": {
               "src": "/imgs/logos/tailwindcss.svg",
-              "alt": "TailwindCSS"
+              "alt": "AI Music"
             }
           },
           {
-            "title": "Shadcn/UI",
+            "title": "Credits",
             "image": {
               "src": "/imgs/logos/shadcn.svg",
-              "alt": "Shadcn/UI"
+              "alt": "Credits"
             }
           },
           {
-            "title": "Vercel",
+            "title": "History",
             "image": {
               "src": "/imgs/logos/vercel.svg",
-              "alt": "Vercel"
+              "alt": "History"
             }
           }
         ]
@@ -104,48 +99,48 @@
       "introduce": {
         "block": "features-list",
         "id": "introduce",
-        "title": "What is ShipAny",
-        "label": "Introduce",
-        "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups, including templates, components, and documentation.",
+        "title": "What is OneAIHub?",
+        "label": "All-in-One AI Workspace",
+        "description": "OneAIHub brings AI chat, image generation, music generation, credits, and activity history into a single creative workspace.",
         "image": {
           "src": "/imgs/features/landing-page.png",
-          "alt": "introduce"
+          "alt": "OneAIHub product overview"
         },
         "items": [
           {
-            "title": "Ready-to-use Templates",
-            "description": "Choose from dozens of production-ready AI SaaS templates to quickly start your project.",
-            "icon": "RiNextjsFill",
+            "title": "AI Chat for ideas and work",
+            "description": "Ask questions, brainstorm, write, reason, and explore creative tasks with powerful AI models.",
+            "icon": "RiMessage2Line",
             "image": {
               "src": "/imgs/features/1.png",
-              "alt": "introduce"
+              "alt": "AI Chat"
             }
           },
           {
-            "title": "Infrastructure Setup",
-            "description": "Get instant access to scalable infrastructure with best practices built-in.",
-            "icon": "RiDatabase2Line",
+            "title": "AI Image generation",
+            "description": "Turn prompts into visuals for concepts, avatars, product ideas, social posts, and creative projects.",
+            "icon": "RiImage2Line",
             "image": {
               "src": "/imgs/features/2.png",
-              "alt": "introduce"
+              "alt": "AI Image generation"
             }
           },
           {
-            "title": "Quick Deployment",
-            "description": "Deploy your AI SaaS application to production in hours, not days.",
-            "icon": "RiCloudyFill",
+            "title": "AI Music creation",
+            "description": "Create songs, melodies, and background music from simple text prompts.",
+            "icon": "RiMusic2Line",
             "image": {
               "src": "/imgs/features/3.png",
-              "alt": "introduce"
+              "alt": "AI Music generation"
             }
           },
           {
-            "title": "AI Integration",
-            "description": "Integrate AI into your project with ease using our built-in AI SDK.",
-            "icon": "RiRobot2Line",
+            "title": "Credits and activity history",
+            "description": "Use credits across AI tools and review your chat, image, and music generation history.",
+            "icon": "RiCoinsLine",
             "image": {
               "src": "/imgs/features/4.png",
-              "alt": "introduce"
+              "alt": "Credits and activity history"
             }
           }
         ],
@@ -154,35 +149,35 @@
       "benefits": {
         "block": "features-accordion",
         "id": "benefits",
-        "title": "Why Choose ShipAny",
+        "title": "Why choose OneAIHub",
         "label": "Benefits",
-        "description": "Get everything you need to launch your AI startup - from ready-to-use templates to technical support.",
+        "description": "A focused place to create, iterate, and manage AI outputs without switching between separate tools.",
         "items": [
           {
-            "title": "Complete Framework",
-            "description": "Built on Next.js with authentication, payments, and AI integration - everything works out of the box.",
-            "icon": "RiNextjsFill",
+            "title": "One workspace for multiple AI tools",
+            "description": "Move from chat to images to music without rebuilding your workflow in different apps.",
+            "icon": "RiRobot2Line",
             "image": {
               "src": "/imgs/features/user-billing.png",
-              "alt": "benefits"
+              "alt": "Unified AI workspace"
             }
           },
           {
-            "title": "Rich Templates Library",
-            "description": "Choose from various AI SaaS templates to kickstart your project - chatbots, image generation, and more.",
-            "icon": "RiClapperboardAiLine",
+            "title": "Credit-based usage",
+            "description": "Start with trial credits and scale your creative work when you need more capacity.",
+            "icon": "RiCoinsLine",
             "image": {
               "src": "/imgs/features/admin-settings.png",
-              "alt": "benefits"
+              "alt": "Credit-based usage"
             }
           },
           {
-            "title": "Technical Guidance",
-            "description": "Get dedicated support and join our developer community to ensure your successful launch.",
-            "icon": "RiCodeFill",
+            "title": "Built for creative workflows",
+            "description": "Keep prompts, generated results, and task history organized for repeatable AI production.",
+            "icon": "RiSparkling2Line",
             "image": {
               "src": "/imgs/features/landing-page.png",
-              "alt": "benefits"
+              "alt": "Creative AI workflow"
             }
           }
         ]
@@ -190,45 +185,45 @@
       "usage": {
         "block": "features-step",
         "id": "usage",
-        "title": "How to Launch with ShipAny",
-        "description": "Get your AI SaaS startup running in three simple steps:",
+        "title": "Create with OneAIHub in four steps",
+        "description": "A simple workflow for exploring chat, image, and music generation:",
         "image": {
           "src": "/imgs/features/1.png",
-          "alt": "usage"
+          "alt": "OneAIHub workflow"
         },
         "image_position": "left",
         "text_align": "center",
         "items": [
           {
-            "title": "Get ShipAny",
-            "description": "Buy ShipAny with a one-time payment. Check your email for the code and documentation.",
+            "title": "Sign in",
+            "description": "Create an account and get ready to use your OneAIHub workspace.",
             "image": {
               "src": "/imgs/features/5.png",
-              "alt": "usage"
+              "alt": "Sign in"
             }
           },
           {
-            "title": "Start Your Project",
-            "description": "Read the documentation and clone the code of ShipAny. Start building your AI SaaS startup.",
+            "title": "Choose an AI tool",
+            "description": "Start with AI Chat, AI Image Generator, or AI Music Generator based on your task.",
             "image": {
               "src": "/imgs/features/6.png",
-              "alt": "usage"
+              "alt": "Choose an AI tool"
             }
           },
           {
-            "title": "Customize Your Project",
-            "description": "Modify the template with your data and contents. Specific AI functionality needs.",
+            "title": "Create with credits",
+            "description": "Use credits to generate responses, visuals, and music from your prompts.",
             "image": {
               "src": "/imgs/features/7.png",
-              "alt": "usage"
+              "alt": "Create with credits"
             }
           },
           {
-            "title": "Deploy to Production",
-            "description": "Deploy your project to production with a few steps and start serving customers immediately.",
+            "title": "Review your history",
+            "description": "Return to previous chats and AI tasks whenever you need to continue or reuse results.",
             "image": {
               "src": "/imgs/features/8.png",
-              "alt": "usage"
+              "alt": "Review history"
             }
           }
         ],
@@ -236,178 +231,178 @@
       },
       "features": {
         "id": "features",
-        "title": "Key Features of ShipAny",
-        "description": "Everything you need to launch your AI SaaS startup quickly and efficiently.",
+        "title": "Core OneAIHub tools",
+        "description": "Everything you need to explore AI-assisted thinking, visual creation, and music generation.",
         "items": [
           {
-            "title": "Next.js Boilerplate",
-            "description": "Production-ready Next.js templates with SEO-friendly structure and i18n support.",
-            "icon": "RiNextjsFill"
+            "title": "AI Chat",
+            "description": "Chat with powerful AI models for ideas, writing, reasoning, coding, and creative exploration.",
+            "icon": "RiMessage2Line"
           },
           {
-            "title": "Authentication & Payments",
-            "description": "Integrated Google OAuth, one-tap login, and Stripe payment processing.",
-            "icon": "RiKey2Fill"
+            "title": "AI Image Generator",
+            "description": "Generate images, illustrations, avatars, product visuals, concept art, and social graphics.",
+            "icon": "RiImage2Line"
           },
           {
-            "title": "Data Infrastructure",
-            "description": "Built-in Supabase integration for reliable and scalable data storage.",
-            "icon": "RiDatabase2Line"
+            "title": "AI Music Generator",
+            "description": "Create songs, melodies, and background music from simple text prompts.",
+            "icon": "RiMusic2Line"
           },
           {
-            "title": "One-Click Deployment",
-            "description": "Seamless deployment to Vercel or Cloudflare with automated setup.",
-            "icon": "RiCloudy2Fill"
+            "title": "Credit-based access",
+            "description": "Use one credit system across AI tools and top up when your creative workload grows.",
+            "icon": "RiCoinsLine"
           },
           {
-            "title": "Business Analytics",
-            "description": "Integrated Google Analytics and Search Console for tracking growth.",
-            "icon": "RiBarChart2Line"
+            "title": "Activity history",
+            "description": "Track chats, generated images, music tasks, credits, and payments from your account.",
+            "icon": "RiHistoryLine"
           },
           {
-            "title": "AI-Ready Infrastructure",
-            "description": "Pre-configured AI integration with built-in credits system and API sales.",
-            "icon": "RiRobot2Line"
+            "title": "Admin operations",
+            "description": "Manage users, credits, payments, AI tasks, and provider settings from the admin dashboard.",
+            "icon": "RiSettings3Line"
           }
         ]
       },
       "stats": {
         "id": "stats",
-        "title": "People Love ShipAny",
-        "description": "for it's easy to use and fast to ship.",
+        "title": "One hub for every AI workflow",
+        "description": "A first version focused on the essential AI tools people use every day.",
         "items": [
           {
-            "title": "999+",
-            "description": "Customers"
+            "title": "3",
+            "description": "Core AI tools"
           },
           {
-            "title": "200+",
-            "description": "Blocks"
+            "title": "1",
+            "description": "Shared credits system"
           },
           {
-            "title": "50+",
-            "description": "Templates"
+            "title": "24/7",
+            "description": "Creative workspace"
           }
         ],
         "className": "bg-muted"
       },
       "testimonials": {
         "id": "testimonials",
-        "title": "What Users Say About ShipAny",
-        "description": "Hear from developers and founders who launched their AI startups with ShipAny.",
+        "title": "How creators use OneAIHub",
+        "description": "A workspace for people who move between ideas, visuals, and sound.",
         "items": [
           {
-            "name": "David Chen",
-            "role": "Founder of AIWallpaper.shop",
-            "quote": "ShipAny saved us months of development time. We launched our AI wallpaper business in just 2 days and got our first paying customer within a week!",
+            "name": "Maya Chen",
+            "role": "Content Creator",
+            "quote": "I can brainstorm a campaign, generate concept images, and outline background music ideas in the same workspace.",
             "image": {
               "src": "/imgs/avatars/1.png",
-              "alt": "david"
+              "alt": "maya"
             }
           },
           {
-            "name": "Rachel Kim",
-            "role": "CTO at HeyBeauty.ai",
-            "quote": "The pre-built AI infrastructure is a game-changer. We didn't have to worry about architecture - just focused on our AI beauty tech and went live fast.",
+            "name": "Leo Park",
+            "role": "Product Designer",
+            "quote": "OneAIHub helps me move from written ideas to visual concepts without switching tools all day.",
             "image": {
               "src": "/imgs/avatars/2.png",
-              "alt": "rachel"
+              "alt": "leo"
             }
           },
           {
-            "name": "Marcus Thompson",
-            "role": "Solo Developer",
-            "quote": "As a solo developer, ShipAny gave me everything I needed - auth, payments, AI integration, and beautiful UI. Launched my SaaS in a weekend!",
+            "name": "Nina Brooks",
+            "role": "Indie Maker",
+            "quote": "The shared credits model makes it easy to test chat, images, and music before deciding what to scale.",
             "image": {
               "src": "/imgs/avatars/3.png",
-              "alt": "marcus"
+              "alt": "nina"
             }
           },
           {
-            "name": "Sofia Garcia",
-            "role": "CEO of Melodisco",
-            "quote": "The templates are production-ready and highly customizable. We built our AI music platform in hours instead of months. Incredible time-to-market!",
+            "name": "Owen Liu",
+            "role": "Marketing Lead",
+            "quote": "Our team uses OneAIHub to explore copy, creative directions, and assets for launches.",
             "image": {
               "src": "/imgs/avatars/4.png",
-              "alt": "sofia"
+              "alt": "owen"
             }
           },
           {
-            "name": "James Wilson",
-            "role": "Tech Lead at GPTs.works",
-            "quote": "ShipAny's infrastructure is rock-solid. We scaled from 0 to 10k users without touching the backend. Best investment for our AI startup.",
+            "name": "Sara Miller",
+            "role": "Music Creator",
+            "quote": "Text-to-music workflows are easier when I can keep prompts and results together with my other AI tasks.",
             "image": {
               "src": "/imgs/avatars/5.png",
-              "alt": "james"
+              "alt": "sara"
             }
           },
           {
-            "name": "Anna Zhang",
-            "role": "Startup Founder",
-            "quote": "From idea to launch in 3 days! ShipAny's templates and deployment tools made it possible to test our AI business concept incredibly fast.",
+            "name": "Alex Stone",
+            "role": "AI Explorer",
+            "quote": "It is a simple starting point for experimenting with multiple AI tools from one account.",
             "image": {
               "src": "/imgs/avatars/6.png",
-              "alt": "anna"
+              "alt": "alex"
             }
           }
         ]
       },
       "faq": {
         "id": "faq",
-        "title": "Frequently Asked Questions About ShipAny",
-        "description": "Have another question? Contact us on Discord or by email.",
+        "title": "Frequently Asked Questions",
+        "description": "Learn how OneAIHub helps you create with chat, images, music, and credits.",
         "items": [
           {
-            "question": "What exactly is ShipAny and how does it work?",
-            "answer": "ShipAny is a comprehensive NextJS boilerplate designed specifically for building AI SaaS startups. It provides ready-to-use templates, infrastructure setup, and deployment tools that help you launch your AI business in hours instead of days."
+            "question": "What is OneAIHub?",
+            "answer": "OneAIHub is an all-in-one AI platform for AI chat, AI image generation, AI music generation, credits, and creative AI workflows."
           },
           {
-            "question": "Do I need advanced technical skills to use ShipAny?",
-            "answer": "While basic programming knowledge is helpful, ShipAny is designed to be developer-friendly. Our templates and documentation make it easy to get started, even if you're not an expert in AI or cloud infrastructure."
+            "question": "What AI tools are included?",
+            "answer": "The first version focuses on AI Chat, AI Image Generator, and AI Music Generator, with account history and credit-based usage."
           },
           {
-            "question": "What types of AI SaaS can I build with ShipAny?",
-            "answer": "ShipAny supports a wide range of AI applications, from content generation to data analysis tools. Our templates cover popular use cases like AI chatbots, content generators, image processing apps, and more."
+            "question": "Do I need credits to use AI tools?",
+            "answer": "Yes. AI tools use credits, and new users can start with free trial credits before upgrading or purchasing more."
           },
           {
-            "question": "How long does it typically take to launch with ShipAny?",
-            "answer": "With ShipAny, you can have a working prototype in hours and a production-ready application in hours. Our one-click deployment and pre-configured infrastructure significantly reduce the traditional months-long development cycle."
+            "question": "Can I generate images and music from text prompts?",
+            "answer": "Yes. You can describe the visual or music idea you want, submit a prompt, and review generated results in your account."
           },
           {
-            "question": "What's included in the ShipAny infrastructure?",
-            "answer": "ShipAny provides a complete infrastructure stack including authentication, database setup, API integration, payment processing, and scalable cloud deployment. Everything is pre-configured following industry best practices."
+            "question": "Where can I find previous AI tasks?",
+            "answer": "Your activity pages keep track of chats and AI generation tasks so you can revisit results later."
           },
           {
-            "question": "Can I customize the templates to match my brand?",
-            "answer": "Absolutely! All ShipAny templates are fully customizable. You can modify the design, features, and functionality to match your brand identity and specific business requirements while maintaining the robust underlying infrastructure."
+            "question": "How do payments and credits work?",
+            "answer": "Pricing plans and credit packs let you add more credits when you need higher usage for chat, image, and music generation."
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "Ship your first AI SaaS Startup",
-        "description": "Start from here, ship with ShipAny.",
+        "title": "Start creating with OneAIHub",
+        "description": "Use one workspace for AI chat, image generation, music creation, credits, and activity history.",
         "buttons": [
           {
-            "title": "Get ShipAny",
-            "url": "https://shipany.ai",
-            "target": "_blank",
+            "title": "Start Creating",
+            "url": "/chat",
+            "target": "_self",
             "icon": "Zap"
           },
           {
-            "title": "Read Document",
-            "url": "/docs",
-            "target": "_blank",
+            "title": "View Pricing",
+            "url": "/pricing",
+            "target": "_self",
             "variant": "outline",
-            "icon": "BookOpenText"
+            "icon": "DollarSign"
           }
         ],
         "className": "bg-muted"
       },
       "subscribe": {
         "id": "subscribe",
-        "title": "Subscribe to our newsletter",
-        "description": "Get the latest news and updates from ShipAny.",
+        "title": "Get OneAIHub updates",
+        "description": "Receive product updates for AI chat, image generation, music generation, and credits.",
         "submit": {
           "input": {
             "placeholder": "Enter your email"

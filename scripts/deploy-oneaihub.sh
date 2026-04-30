@@ -10,7 +10,7 @@ IMAGE="ghcr.io/claire1940/shipany-template:main"
 DOMAIN="oneaihub.online"
 ROUTER_NAME="oneaihub-online"
 SERVICE_NAME="oneaihub-online"
-SYSTEMD_SERVICE="shipany-template.service"
+SYSTEMD_SERVICE="oneaihub-online.service"
 
 if [ ! -f "${ENV_FILE}" ]; then
   echo "ERROR: missing env file: ${ENV_FILE}" >&2
@@ -40,8 +40,6 @@ docker pull "${IMAGE}"
 if systemctl list-unit-files "${SYSTEMD_SERVICE}" >/dev/null 2>&1; then
   systemctl stop "${SYSTEMD_SERVICE}" || true
 fi
-
-docker rm -f aiwallpaper-best >/dev/null 2>&1 || true
 
 chown -R 1001:1001 "${DATA_DIR}"
 

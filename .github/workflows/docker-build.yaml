@@ -4,8 +4,6 @@ name: Build and Push Docker Image
 on:
   push:
     branches: ['main']
-  pull_request:
-    branches: ['main']
   workflow_dispatch:
 
 env:
@@ -48,6 +46,11 @@ jobs:
           context: .
           push: true
           build-args: |
+            NEXT_PUBLIC_APP_URL=https://oneaihub.online
+            NEXT_PUBLIC_APP_NAME=OneAIHub
+            NEXT_PUBLIC_APP_DESCRIPTION=An all-in-one AI platform for chat, image generation, music generation, and creative AI tools.
+            NEXT_PUBLIC_DEFAULT_LOCALE=en
+            NEXT_PUBLIC_LOCALE_DETECT_ENABLED=false
             NEXT_PUBLIC_THEME=trustai
             NEXT_PUBLIC_APPEARANCE=dark
           tags: ${{ steps.meta.outputs.tags }}
