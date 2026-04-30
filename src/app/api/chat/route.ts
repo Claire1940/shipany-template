@@ -121,6 +121,7 @@ export async function POST(req: Request) {
     const result = streamText({
       model: openrouter.chat(model),
       messages: convertToModelMessages(validatedMessages),
+      maxOutputTokens: 2048,
     });
 
     // send sources and reasoning back to the client
