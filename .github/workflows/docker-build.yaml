@@ -1,5 +1,6 @@
 name: Build and Push Docker Image
 
+# Keep this workflow registered for automatic main branch Docker builds.
 on:
   push:
     branches: ['main']
