@@ -46,7 +46,7 @@ jobs:
           context: .
           push: true
           build-args: |
-            NEXT_PUBLIC_APP_URL=https://oneaihub.online
+            NEXT_PUBLIC_APP_URL=https://www.oneaihub.online
             NEXT_PUBLIC_APP_NAME=OneAIHub
             NEXT_PUBLIC_APP_DESCRIPTION=An all-in-one AI platform for chat, image generation, music generation, and creative AI tools.
             NEXT_PUBLIC_DEFAULT_LOCALE=en
