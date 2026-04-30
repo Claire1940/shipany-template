@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "ShipAny 模板二",
-    "description": "ShipAny 是用于构建 AI SaaS 创业项目的 NextJS 脚手架。提供丰富模板和组件，助您快速上线产品。",
-    "keywords": "shipany, shipany-boilerplate, shipany-template-two-demo"
+    "title": "OneAIHub - 一站式 AI 对话、图片与音乐生成平台",
+    "description": "在 OneAIHub 体验 AI 对话、AI 图片生成、AI 音乐生成和创意 AI 工具。",
+    "keywords": "AI 平台, AI 对话, AI 图片生成器, AI 音乐生成器, AI 工具, 创意 AI, OneAIHub"
   },
   "sign": {
     "sign_in_title": "登录",
