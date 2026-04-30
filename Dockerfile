@@ -15,6 +15,11 @@ FROM deps AS builder
 
 WORKDIR /app
 
+ARG NEXT_PUBLIC_THEME=default
+ARG NEXT_PUBLIC_APPEARANCE=system
+ENV NEXT_PUBLIC_THEME=${NEXT_PUBLIC_THEME}
+ENV NEXT_PUBLIC_APPEARANCE=${NEXT_PUBLIC_APPEARANCE}
+
 # Install dependencies based on the preferred package manager
 COPY . .
 RUN pnpm build
