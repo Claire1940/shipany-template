@@ -1,22 +1,14 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { UIMessage, UseChatHelpers } from '@ai-sdk/react';
-import { BrainCircuitIcon, GlobeIcon } from 'lucide-react';
+import { BrainCircuitIcon } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
 import {
   PromptInput,
-  PromptInputActionAddAttachments,
-  PromptInputActionMenu,
-  PromptInputActionMenuContent,
-  PromptInputActionMenuTrigger,
-  PromptInputAttachment,
-  PromptInputAttachments,
   PromptInputBody,
-  PromptInputButton,
   PromptInputFooter,
-  PromptInputHeader,
   PromptInputSelect,
   PromptInputSelectContent,
   PromptInputSelectItem,
@@ -34,8 +26,36 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from '@/shared/components/ui/tooltip';
-import { useChatContext } from '@/shared/contexts/chat';
+import { useAppContext } from '@/shared/contexts/app';
+import { AIProviderName } from '@/shared/lib/ai-provider-config';
+import {
+  getEnabledAIProviders,
+  hasLoadedAIProviderFlags,
+} from '@/shared/lib/ai-provider-config';
 import { ChatModel } from '@/shared/types/chat';
+
+const CHAT_MODELS: ChatModel[] = [
+  {
+    title: 'Kimi K2 Thinking',
+    name: 'moonshotai/kimi-k2-thinking',
+    provider: 'openrouter',
+  },
+  {
+    title: 'Deepseek R1',
+    name: 'deepseek/deepseek-r1',
+    provider: 'openrouter',
+  },
+  {
+    title: 'GPT-5',
+    name: 'openai/gpt-5',
+    provider: 'openrouter',
+  },
+  {
+    title: 'Claude 4.5 Sonnet',
+    name: 'anthropic/claude-4.5-sonnet',
+    provider: 'openrouter',
+  },
+];
 
 export function ChatInput({
   handleSubmit,
@@ -52,33 +72,47 @@ export function ChatInput({
   onInputChange?: (value: string) => void;
 }) {
   const t = useTranslations('ai.chat.generator');
+  const { configs, fetchConfigs } = useAppContext();
 
-  // todo: get models from api
-  const models: ChatModel[] = [
-    {
-      title: 'Kimi K2 Thinking',
-      name: 'moonshotai/kimi-k2-thinking',
-    },
-    {
-      title: 'Deepseek R1',
-      name: 'deepseek/deepseek-r1',
-    },
-    {
-      title: 'GPT-5',
-      name: 'openai/gpt-5',
-    },
-    {
-      title: 'Claude 4.5 Sonnet',
-      name: 'anthropic/claude-4.5-sonnet',
-    },
-  ];
+  const enabledProviders = useMemo(
+    () => getEnabledAIProviders(configs),
+    [configs]
+  );
+  const availableModels = useMemo(
+    () =>
+      CHAT_MODELS.filter((item) =>
+        item.provider
+          ? enabledProviders.has(item.provider as AIProviderName)
+          : true
+      ),
+    [enabledProviders]
+  );
 
-  const [model, setModel] = useState<string>(models[0].name);
+  const [model, setModel] = useState<string>(availableModels[0]?.name ?? '');
   const [input, setInput] = useState('');
   const [webSearch, setWebSearch] = useState(false);
   const [reasoning, setReasoning] = useState(false);
   const selectedModelLabel =
-    models.find((item) => item.name === model)?.title ?? models[0]?.title ?? '';
+    availableModels.find((item) => item.name === model)?.title ??
+    availableModels[0]?.title ??
+    '';
+
+  useEffect(() => {
+    if (!hasLoadedAIProviderFlags(configs)) {
+      fetchConfigs();
+    }
+  }, [configs, fetchConfigs]);
+
+  useEffect(() => {
+    if (availableModels.length === 0) {
+      setModel('');
+      return;
+    }
+
+    if (!availableModels.some((item) => item.name === model)) {
+      setModel(availableModels[0].name);
+    }
+  }, [availableModels, model]);
 
   return (
     <div className="w-full">
@@ -158,7 +192,7 @@ export function ChatInput({
                 </PromptInputSelectValue>
               </PromptInputSelectTrigger>
               <PromptInputSelectContent>
-                {models.map((model) => (
+                {availableModels.map((model) => (
                   <PromptInputSelectItem key={model.name} value={model.name}>
                     {model.title}
                   </PromptInputSelectItem>
@@ -167,7 +201,7 @@ export function ChatInput({
             </PromptInputSelect>
           </PromptInputTools>
           <PromptInputSubmit
-            disabled={!input || status === 'submitted'}
+            disabled={!input || !model || status === 'submitted'}
             status={status}
           />
         </PromptInputFooter>

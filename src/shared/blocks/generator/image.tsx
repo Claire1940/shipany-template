@@ -38,6 +38,11 @@ import {
 import { Tabs, TabsList, TabsTrigger } from '@/shared/components/ui/tabs';
 import { Textarea } from '@/shared/components/ui/textarea';
 import { useAppContext } from '@/shared/contexts/app';
+import {
+  AIProviderName,
+  getEnabledAIProviders,
+  hasLoadedAIProviderFlags,
+} from '@/shared/lib/ai-provider-config';
 import { cn } from '@/shared/lib/utils';
 
 interface ImageGeneratorProps {
@@ -235,28 +240,83 @@ export function ImageGenerator({
   );
   const [isMounted, setIsMounted] = useState(false);
 
-  const { user, isCheckSign, setIsShowSignModal, fetchUserCredits } =
-    useAppContext();
+  const {
+    user,
+    isCheckSign,
+    setIsShowSignModal,
+    fetchUserCredits,
+    configs,
+    fetchConfigs,
+  } = useAppContext();
 
   useEffect(() => {
     setIsMounted(true);
   }, []);
+
+  useEffect(() => {
+    if (!hasLoadedAIProviderFlags(configs)) {
+      fetchConfigs();
+    }
+  }, [configs, fetchConfigs]);
+
+  const enabledProviders = useMemo(
+    () => getEnabledAIProviders(configs),
+    [configs]
+  );
+  const availableProviderOptions = useMemo(
+    () =>
+      PROVIDER_OPTIONS.filter((option) =>
+        enabledProviders.has(option.value as AIProviderName)
+      ),
+    [enabledProviders]
+  );
+  const availableModels = useMemo(
+    () =>
+      MODEL_OPTIONS.filter(
+        (option) =>
+          option.scenes.includes(activeTab) &&
+          option.provider === provider &&
+          enabledProviders.has(option.provider as AIProviderName)
+      ),
+    [activeTab, enabledProviders, provider]
+  );
 
   const promptLength = prompt.trim().length;
   const remainingCredits = user?.credits?.remainingCredits ?? 0;
   const isPromptTooLong = promptLength > MAX_PROMPT_LENGTH;
   const isTextToImageMode = activeTab === 'text-to-image';
 
+  useEffect(() => {
+    if (availableProviderOptions.length === 0) {
+      if (provider) {
+        setProvider('');
+      }
+      if (model) {
+        setModel('');
+      }
+      return;
+    }
+
+    if (!availableProviderOptions.some((option) => option.value === provider)) {
+      setProvider(availableProviderOptions[0].value);
+      return;
+    }
+
+    if (!availableModels.some((option) => option.value === model)) {
+      setModel(availableModels[0]?.value ?? '');
+    }
+  }, [availableModels, availableProviderOptions, model, provider]);
+
   const handleTabChange = (value: string) => {
     const tab = value as ImageGeneratorTab;
     setActiveTab(tab);
 
-    const availableModels = MODEL_OPTIONS.filter(
+    const nextModels = MODEL_OPTIONS.filter(
       (option) => option.scenes.includes(tab) && option.provider === provider
     );
 
-    if (availableModels.length > 0) {
-      setModel(availableModels[0].value);
+    if (nextModels.length > 0) {
+      setModel(nextModels[0].value);
     } else {
       setModel('');
     }
@@ -271,12 +331,12 @@ export function ImageGenerator({
   const handleProviderChange = (value: string) => {
     setProvider(value);
 
-    const availableModels = MODEL_OPTIONS.filter(
+    const nextModels = MODEL_OPTIONS.filter(
       (option) => option.scenes.includes(activeTab) && option.provider === value
     );
 
-    if (availableModels.length > 0) {
-      setModel(availableModels[0].value);
+    if (nextModels.length > 0) {
+      setModel(nextModels[0].value);
     } else {
       setModel('');
     }
@@ -642,7 +702,7 @@ export function ImageGenerator({
                         <SelectValue placeholder={t('form.select_provider')} />
                       </SelectTrigger>
                       <SelectContent>
-                        {PROVIDER_OPTIONS.map((option) => (
+                        {availableProviderOptions.map((option) => (
                           <SelectItem key={option.value} value={option.value}>
                             {option.label}
                           </SelectItem>
@@ -658,11 +718,7 @@ export function ImageGenerator({
                         <SelectValue placeholder={t('form.select_model')} />
                       </SelectTrigger>
                       <SelectContent>
-                        {MODEL_OPTIONS.filter(
-                          (option) =>
-                            option.scenes.includes(activeTab) &&
-                            option.provider === provider
-                        ).map((option) => (
+                        {availableModels.map((option) => (
                           <SelectItem key={option.value} value={option.value}>
                             {option.label}
                           </SelectItem>
@@ -729,6 +785,8 @@ export function ImageGenerator({
                     onClick={handleGenerate}
                     disabled={
                       isGenerating ||
+                      !provider ||
+                      !model ||
                       !prompt.trim() ||
                       isPromptTooLong ||
                       isReferenceUploading ||

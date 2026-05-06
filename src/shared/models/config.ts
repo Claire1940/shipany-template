@@ -148,6 +148,11 @@ export async function getPublicConfigs(): Promise<Configs> {
 
   const configs = {
     ...publicConfigs,
+    openrouter_enabled: String(Boolean(allConfigs.openrouter_api_key)),
+    kie_enabled: String(Boolean(allConfigs.kie_api_key)),
+    replicate_enabled: String(Boolean(allConfigs.replicate_api_token)),
+    fal_enabled: String(Boolean(allConfigs.fal_api_key)),
+    gemini_enabled: String(Boolean(allConfigs.gemini_api_key)),
   };
 
   return configs;

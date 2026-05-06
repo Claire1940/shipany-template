@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import {
   CheckCircle,
   Clock,
@@ -39,6 +39,10 @@ import {
 import { Switch } from '@/shared/components/ui/switch';
 import { Textarea } from '@/shared/components/ui/textarea';
 import { useAppContext } from '@/shared/contexts/app';
+import {
+  getEnabledAIProviders,
+  hasLoadedAIProviderFlags,
+} from '@/shared/lib/ai-provider-config';
 import { cn } from '@/shared/lib/utils';
 
 interface SongData {
@@ -74,10 +78,24 @@ interface SongGeneratorProps {
   className?: string;
 }
 
+const MUSIC_MODEL_OPTIONS = [
+  { value: 'V5', label: 'Suno V5' },
+  { value: 'V4_5PLUS', label: 'Suno V4.5+' },
+  { value: 'V4_5', label: 'Suno V4.5' },
+  { value: 'V4', label: 'Suno V4' },
+  { value: 'V3_5', label: 'Suno V3.5' },
+];
+
 export function MusicGenerator({ className, srOnlyTitle }: SongGeneratorProps) {
   const t = useTranslations('ai.music');
-  const { user, isCheckSign, setIsShowSignModal, fetchUserCredits } =
-    useAppContext();
+  const {
+    user,
+    isCheckSign,
+    setIsShowSignModal,
+    fetchUserCredits,
+    configs,
+    fetchConfigs,
+  } = useAppContext();
 
   // Form state
   const [provider, setProvider] = useState('kie');
@@ -114,6 +132,29 @@ export function MusicGenerator({ className, srOnlyTitle }: SongGeneratorProps) {
   useEffect(() => {
     setIsMounted(true);
   }, []);
+
+  useEffect(() => {
+    if (!hasLoadedAIProviderFlags(configs)) {
+      fetchConfigs();
+    }
+  }, [configs, fetchConfigs]);
+
+  const enabledProviders = useMemo(
+    () => getEnabledAIProviders(configs),
+    [configs]
+  );
+  const isKieEnabled = enabledProviders.has('kie');
+  const availableModels = isKieEnabled ? MUSIC_MODEL_OPTIONS : [];
+
+  useEffect(() => {
+    setProvider(isKieEnabled ? 'kie' : '');
+  }, [isKieEnabled]);
+
+  useEffect(() => {
+    if (!availableModels.some((item) => item.value === model)) {
+      setModel(availableModels[0]?.value ?? '');
+    }
+  }, [availableModels, model]);
 
   // Task polling
   const pollTaskStatus = async (taskId: string) => {
@@ -473,11 +514,11 @@ export function MusicGenerator({ className, srOnlyTitle }: SongGeneratorProps) {
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="V5">Suno V5</SelectItem>
-                        <SelectItem value="V4_5PLUS">Suno V4.5+</SelectItem>
-                        <SelectItem value="V4_5">Suno V4.5</SelectItem>
-                        <SelectItem value="V4">Suno V4</SelectItem>
-                        <SelectItem value="V3_5">Suno V3.5</SelectItem>
+                        {availableModels.map((option) => (
+                          <SelectItem key={option.value} value={option.value}>
+                            {option.label}
+                          </SelectItem>
+                        ))}
                       </SelectContent>
                     </Select>
                   </div>
@@ -564,7 +605,7 @@ export function MusicGenerator({ className, srOnlyTitle }: SongGeneratorProps) {
                 ) : user ? (
                   <Button
                     onClick={handleGenerate}
-                    disabled={isGenerating}
+                    disabled={isGenerating || !isKieEnabled || !model}
                     className="w-full"
                     size="lg"
                   >
