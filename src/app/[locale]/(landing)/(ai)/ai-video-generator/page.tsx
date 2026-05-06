@@ -30,7 +30,7 @@ export default async function AiVideoGeneratorPage({
         title: t.raw('page.title'),
         description: t.raw('page.description'),
         background_image: {
-          src: '/imgs/features/oneaihub-flow.png?v=20260506r',
+          src: '/imgs/features/oneaihub-flow-v20260506r.png',
           alt: 'OneAIHub creative AI workflow background',
         },
       },

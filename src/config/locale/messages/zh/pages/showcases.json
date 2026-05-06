@@ -39,7 +39,7 @@
             "url": "/chat",
             "target": "_self",
             "image": {
-              "src": "/imgs/features/oneaihub-workspace.png?v=20260506r",
+              "src": "/imgs/features/oneaihub-workspace-v20260506r.png",
               "alt": "OneAIHub AI 对话"
             },
             "group": "ai-chat"
@@ -50,7 +50,7 @@
             "url": "/ai-image-generator",
             "target": "_self",
             "image": {
-              "src": "/imgs/features/oneaihub-image.png?v=20260506r",
+              "src": "/imgs/features/oneaihub-image-v20260506r.png",
               "alt": "OneAIHub AI 图片生成器"
             },
             "group": "ai-image"
@@ -61,7 +61,7 @@
             "url": "/ai-music-generator",
             "target": "_self",
             "image": {
-              "src": "/imgs/features/oneaihub-music.png?v=20260506r",
+              "src": "/imgs/features/oneaihub-music-v20260506r.png",
               "alt": "OneAIHub AI 音乐生成器"
             },
             "group": "ai-music"
@@ -72,7 +72,7 @@
             "url": "/pricing",
             "target": "_self",
             "image": {
-              "src": "/imgs/features/oneaihub-chat.png?v=20260506r",
+              "src": "/imgs/features/oneaihub-chat-v20260506r.png",
               "alt": "OneAIHub 积分"
             },
             "group": "credits"
