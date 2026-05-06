@@ -11,6 +11,7 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: [
         '/*?*q=',
+        '/acceptable-use-policy',
         '/privacy-policy',
         '/terms-of-service',
         '/settings/*',
@@ -22,4 +23,3 @@ export default function robots(): MetadataRoute.Robots {
     sitemap: `${appUrl}/sitemap.xml`,
   };
 }
-

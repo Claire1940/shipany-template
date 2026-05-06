@@ -1,21 +1,16 @@
 {
-  "name": "shipany-template-two",
+  "name": "oneaihub",
   "version": "1.8.2",
   "private": true,
-  "author": "ShipAny.ai",
-  "homepage": "https://shipany.ai",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/shipanyai/shipany-template-two"
-  },
+  "author": "OneAIHub",
+  "homepage": "https://www.oneaihub.online",
   "keywords": [
-    "shipany",
-    "shipany-two",
-    "shipany-template-two",
-    "ai-saas-boilerplate",
-    "ai-saas-template",
-    "ai-saas-framework",
-    "ai-saas-development"
+    "oneaihub",
+    "ai-chat",
+    "ai-image-generator",
+    "ai-music-generator",
+    "ai-credits",
+    "creative-ai-workflow"
   ],
   "scripts": {
     "dev": "next dev --turbopack",

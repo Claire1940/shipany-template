@@ -1,50 +1,40 @@
 ---
-title: 'ShipAny Two 发布'
-description: '我们发布了 ShipAny 的第二个大版本'
-date: '2025-11-11'
-tags: ['ShipAny Two', 'Next.js 16', 'AI SaaS', 'Boilerplate']
-version: '2.0.0'
+title: 'OneAIHub 支付和创意工作流更新'
+description: '支付、套餐、积分和创意 AI 工作流已经完成串联。'
+date: '2026-05-02'
+tags: ['OneAIHub', 'Creem', '支付', '积分', 'AI 工作流']
+version: '1.1.0'
 ---
 
-![ShipAny Two](/imgs/features/admin-settings.png)
+![OneAIHub Payments](/imgs/features/oneaihub-workspace.png)
 
-ShipAny Two 基于最新的 `Next.js 16`，在编译性能方面有很大提升，本地开发更快、内存占用更小。
+OneAIHub 已经把价格页、支付记录和积分发放串联成完整流程。
 
 <Accordion type="multiple" className="not-prose w-full">
-    <AccordionItem value="features">
-        <AccordionTrigger>主要特性</AccordionTrigger>
+    <AccordionItem value="payments">
+        <AccordionTrigger>支付流程</AccordionTrigger>
         <AccordionContent className="flex flex-col gap-4 text-balance">
         <ul className="list-disc space-y-2 pl-4">
-            <li>核心系统：管理后台、用户控制台、着陆页</li>
-            <li>核心模块：数据库、内容管理、多语言、权限控制</li>
-            <li>扩展模块：登录、支付、存储、数据统计、广告、联盟营销、AI</li>
-            <li>主题系统：配色、字体、布局、组件</li>
-            <li>配置系统：可视化配置、代码配置、环境变量配置</li>
-            <li>内容管理：分类、文章、页面、日志</li>
+            <li>Creem 产品已映射到 OneAIHub 价格套餐。</li>
+            <li>入门积分包、创作者月付、专业年付都使用 OneAIHub 品牌产品图。</li>
+            <li>支付成功后可在用户中心和后台支付记录中查看订单。</li>
+            <li>成功付款会给用户账户发放对应积分。</li>
         </ul>
         </AccordionContent>
     </AccordionItem>
 
-    <AccordionItem value="performance">
-        <AccordionTrigger>相比于 ShipAny One 的改进</AccordionTrigger>
+    <AccordionItem value="creative-tools">
+        <AccordionTrigger>创意 AI 工具</AccordionTrigger>
         <AccordionContent className="flex flex-col gap-4 text-balance">
         <ul className="list-disc space-y-2 pl-4">
-            <li>使用 Better-Auth 替换 Auth.js，支持更多认证方式</li>
-            <li>基于 Next.js 16，本地开发更快、内存占用更小</li>
-            <li>管理后台 UI 优化，更加美观、实用</li>
-            <li>支持可视化配置，更加灵活、方便</li>
-            <li>支持 RBAC 权限控制</li>
-            <li>集成更完善的内容管理功能</li>
+            <li>AI 对话支持内容创作和效率工作流。</li>
+            <li>AI 图片生成支持提示词生成视觉内容。</li>
+            <li>AI 音乐生成支持文本生成音乐任务。</li>
         </ul>
         </AccordionContent>
     </AccordionItem>
-
 </Accordion>
 
-> 快速开始
+> 管理你的工作台
 
-```bash
-git clone git@github.com:shipanyai/shipany-template-two.git
-```
-
-[ShipAny Two 文档](https://shipany.ai/zh/docs/quick-start)
+通过 [积分](/settings/credits) 和 [支付记录](/settings/payments) 查看账户活动。

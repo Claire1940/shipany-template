@@ -1,15 +1,14 @@
-import Image from 'next/image';
 import { Star } from 'lucide-react';
 
-import { Avatar } from '@/shared/components/ui/avatar';
+import { Avatar, AvatarFallback, AvatarImage } from '@/shared/components/ui/avatar';
 
 const userImgUrls = [
-  '/imgs/avatars/1.png',
-  '/imgs/avatars/2.png',
-  '/imgs/avatars/3.png',
-  '/imgs/avatars/4.png',
-  '/imgs/avatars/5.png',
-  '/imgs/avatars/6.png',
+  '/imgs/avatars/oneaihub-chat-avatar.png?v=20260506c',
+  '/imgs/avatars/oneaihub-image-avatar.png?v=20260506c',
+  '/imgs/avatars/oneaihub-music-avatar.png?v=20260506c',
+  '/imgs/avatars/oneaihub-credits-avatar.png?v=20260506c',
+  '/imgs/avatars/oneaihub-workflow-avatar.png?v=20260506c',
+  '/imgs/avatars/oneaihub-admin-avatar.png?v=20260506c',
 ];
 
 export function SocialAvatars({ tip }: { tip: string }) {
@@ -18,7 +17,8 @@ export function SocialAvatars({ tip }: { tip: string }) {
       <span className="mx-4 inline-flex items-center -space-x-2">
         {userImgUrls.map((url, index) => (
           <Avatar className="size-10 border" key={index}>
-            <Image width={40} height={40} src={url} alt="placeholder" />
+            <AvatarImage src={url} alt="OneAIHub creator avatar" />
+            <AvatarFallback>{index + 1}</AvatarFallback>
           </Avatar>
         ))}
       </span>

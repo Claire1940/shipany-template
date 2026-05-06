@@ -3,9 +3,11 @@ import { AIMediaType } from '@/extensions/ai';
 import { getUuid } from '@/shared/lib/hash';
 import { respData, respErr } from '@/shared/lib/resp';
 import { createAITask, NewAITask } from '@/shared/models/ai_task';
+import { getAllConfigs } from '@/shared/models/config';
 import { getRemainingCredits } from '@/shared/models/credit';
 import { getUserInfo } from '@/shared/models/user';
 import { getAIService } from '@/shared/services/ai';
+import { moderateCreemPrompt } from '@/shared/services/creem-moderation';
 
 export async function POST(request: Request) {
   try {
@@ -18,6 +20,12 @@ export async function POST(request: Request) {
 
     if (!prompt && !options) {
       throw new Error('prompt or options is required');
+    }
+
+    // get current user
+    const user = await getUserInfo();
+    if (!user) {
+      throw new Error('no auth, please sign in');
     }
 
     const aiService = await getAIService();
@@ -33,10 +41,12 @@ export async function POST(request: Request) {
       throw new Error('invalid provider');
     }
 
-    // get current user
-    const user = await getUserInfo();
-    if (!user) {
-      throw new Error('no auth, please sign in');
+    const normalizedPrompt = String(prompt || '').trim();
+    if (
+      (mediaType === AIMediaType.IMAGE || mediaType === AIMediaType.VIDEO) &&
+      !normalizedPrompt
+    ) {
+      throw new Error('prompt is required');
     }
 
     // todo: get cost credits from settings
@@ -70,6 +80,15 @@ export async function POST(request: Request) {
       throw new Error('invalid mediaType');
     }
 
+    if (mediaType === AIMediaType.IMAGE || mediaType === AIMediaType.VIDEO) {
+      const configs = await getAllConfigs();
+      await moderateCreemPrompt({
+        prompt: normalizedPrompt,
+        externalId: `${user.id}:${mediaType}:${scene || 'generate'}`,
+        configs,
+      });
+    }
+
     // check credits
     const remainingCredits = await getRemainingCredits(user.id);
     if (remainingCredits < costCredits) {
@@ -81,7 +100,7 @@ export async function POST(request: Request) {
     const params: any = {
       mediaType,
       model,
-      prompt,
+      prompt: normalizedPrompt,
       callbackUrl,
       options,
     };
@@ -101,7 +120,7 @@ export async function POST(request: Request) {
       mediaType,
       provider,
       model,
-      prompt,
+      prompt: normalizedPrompt,
       scene,
       options: options ? JSON.stringify(options) : null,
       status: result.taskStatus,

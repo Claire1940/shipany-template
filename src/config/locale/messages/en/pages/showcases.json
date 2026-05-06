@@ -1,148 +1,81 @@
 {
   "metadata": {
     "title": "Showcases",
-    "description": "Awesome projects built with ShipAny"
+    "description": "Creative workflows powered by OneAIHub"
   },
   "page": {
     "title": "Showcases",
     "sections": {
       "showcases": {
         "id": "showcases",
-        "title": "AI SaaS Startups built with ShipAny",
-        "description": "Easy to use and fast to ship.",
+        "title": "Creative AI workflows powered by OneAIHub",
+        "description": "Explore chat, image, music, and content ideas for your AI workspace.",
         "groups": [
           {
             "name": "all",
             "title": "All"
           },
           {
-            "name": "ai-chatbot",
-            "title": "AI Chatbot"
+            "name": "ai-chat",
+            "title": "AI Chat"
           },
           {
             "name": "ai-image",
             "title": "AI Image"
           },
           {
-            "name": "ai-video",
-            "title": "AI Video"
-          },
-          {
-            "name": "ai-audio",
-            "title": "AI Audio"
-          },
-          {
             "name": "ai-music",
             "title": "AI Music"
           },
           {
-            "name": "ai-coding",
-            "title": "AI Coding"
-          },
-          {
-            "name": "other",
-            "title": "Other"
+            "name": "credits",
+            "title": "Credits"
           }
         ],
         "items": [
           {
-            "title": "ThinkAny",
-            "description": "AI Search Engine",
-            "url": "https://thinkany.ai",
-            "target": "_blank",
+            "title": "AI Chat Workspace",
+            "description": "Chat with AI models for writing, brainstorming, and productivity.",
+            "url": "/chat",
+            "target": "_self",
             "image": {
-              "src": "/imgs/cases/7.png",
-              "alt": "showcases"
+              "src": "/imgs/features/oneaihub-workspace.png",
+              "alt": "OneAIHub AI Chat"
             },
-            "group": "ai-chatbot"
+            "group": "ai-chat"
           },
           {
-            "title": "HeyBeauty",
-            "description": "AI Virtual Try On",
-            "url": "https://heybeauty.ai",
-            "target": "_blank",
+            "title": "AI Image Generator",
+            "description": "Generate images from prompts for creative projects.",
+            "url": "/ai-image-generator",
+            "target": "_self",
             "image": {
-              "src": "/imgs/cases/5.png",
-              "alt": "showcases"
-            },
-            "group": "ai-image"
-          },
-          {
-            "title": "AI Wallpaper",
-            "description": "AI Wallpaper Generator",
-            "url": "https://aiwallpaper.shop",
-            "target": "_blank",
-            "image": {
-              "src": "/imgs/cases/1.png",
-              "alt": "showcases"
+              "src": "/imgs/features/oneaihub-image.png",
+              "alt": "OneAIHub AI Image Generator"
             },
             "group": "ai-image"
           },
           {
-            "title": "AI Cover",
-            "description": "AI Cover Generator",
-            "url": "https://aicover.design",
-            "target": "_blank",
+            "title": "AI Music Generator",
+            "description": "Create songs, instrumentals, and background tracks from text.",
+            "url": "/ai-music-generator",
+            "target": "_self",
             "image": {
-              "src": "/imgs/cases/2.png",
-              "alt": "showcases"
-            },
-            "group": "ai-image"
-          },
-          {
-            "title": "GPTs Works",
-            "description": "GPTs Directory",
-            "url": "https://gpts.works",
-            "target": "_blank",
-            "image": {
-              "src": "/imgs/cases/3.png",
-              "alt": "showcases"
-            },
-            "group": "other"
-          },
-          {
-            "title": "Melodisco",
-            "description": "AI Music Player",
-            "url": "https://melodis.co",
-            "target": "_blank",
-            "image": {
-              "src": "/imgs/cases/4.png",
-              "alt": "showcases"
+              "src": "/imgs/features/oneaihub-music.png",
+              "alt": "OneAIHub AI Music Generator"
             },
             "group": "ai-music"
           },
           {
-            "title": "Pagen",
-            "description": "AI Landing Page Generator",
-            "url": "https://pagen.so",
-            "target": "_blank",
+            "title": "Credits and Billing",
+            "description": "Buy credits, review payments, and manage creative AI usage.",
+            "url": "/pricing",
+            "target": "_self",
             "image": {
-              "src": "/imgs/cases/6.png",
-              "alt": "showcases"
+              "src": "/imgs/features/oneaihub-chat.png",
+              "alt": "OneAIHub Credits"
             },
-            "group": "ai-coding"
-          },
-          {
-            "title": "SoraFM",
-            "description": "AI Video Generator",
-            "url": "https://sorafm.trys.ai",
-            "target": "_blank",
-            "image": {
-              "src": "/imgs/cases/8.png",
-              "alt": "showcases"
-            },
-            "group": "ai-video"
-          },
-          {
-            "title": "PodLM",
-            "description": "AI Podcast Generator",
-            "url": "https://podlm.ai",
-            "target": "_blank",
-            "image": {
-              "src": "/imgs/cases/9.png",
-              "alt": "showcases"
-            },
-            "group": "ai-audio"
+            "group": "credits"
           }
         ]
       }

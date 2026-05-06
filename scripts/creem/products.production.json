@@ -1,0 +1,35 @@
+{
+  "api_key_name": "OneAIHub Production Backend",
+  "webhook": {
+    "name": "OneAIHub Production Webhook",
+    "url": "https://www.oneaihub.online/api/payment/notify/creem"
+  },
+  "products": [
+    {
+      "product_id": "starter-pack",
+      "title": "OneAIHub Starter Pack",
+      "description": "One-time AI credit pack for chat, image generation, and music creation.",
+      "billing_type": "one-time",
+      "amount": 499,
+      "image": "/root/Documents/AIProjects/shipany-template/public/imgs/features/oneaihub-workspace.png"
+    },
+    {
+      "product_id": "creator-monthly",
+      "title": "OneAIHub Creator Monthly",
+      "description": "Monthly AI credits for recurring creative workflows.",
+      "billing_type": "subscription",
+      "billing_period": "Monthly",
+      "amount": 999,
+      "image": "/root/Documents/AIProjects/shipany-template/public/imgs/features/oneaihub-image.png"
+    },
+    {
+      "product_id": "pro-yearly",
+      "title": "OneAIHub Pro Yearly",
+      "description": "Best-value annual AI credit plan for power users.",
+      "billing_type": "subscription",
+      "billing_period": "Yearly",
+      "amount": 7999,
+      "image": "/root/Documents/AIProjects/shipany-template/public/imgs/features/oneaihub-music.png"
+    }
+  ]
+}

@@ -1,15 +1,15 @@
 {
   "metadata": {
     "title": "AI Image Generator",
-    "description": "Generate images with AI models, support text-to-image and image-to-image."
+    "description": "Generate creative images, avatars, product visuals, illustrations, concept art, and social media graphics with OneAIHub."
   },
   "page": {
     "title": "AI Image Generator",
-    "description": "Generate images with AI models, support text-to-image and image-to-image."
+    "description": "Turn text prompts and reference images into polished visuals for creative work, product ideas, avatars, concept art, and social posts. Unsafe, explicit, or deceptive requests are blocked."
   },
   "generator": {
     "title": "Image Generator",
-    "description": "Generate images with AI models, support text-to-image and image-to-image.",
+    "description": "Create images from prompts or guide the result with reference images. Only lawful, non-explicit, non-deceptive requests are allowed.",
     "tabs": {
       "text-to-image": "Text to Image",
       "image-to-image": "Image to Image"
@@ -20,9 +20,9 @@
       "select_provider": "Select Provider",
       "select_model": "Select Model",
       "prompt": "Prompt",
-      "prompt_placeholder": "Describe the details of the image, such as color, shape, texture, etc.",
+      "prompt_placeholder": "Describe the subject, style, lighting, composition, colors, and intended use of the image. Do not request NSFW, deepfake, or face-swap content.",
       "reference_image": "Reference Image",
-      "reference_image_placeholder": "Upload reference images, support multiple images",
+      "reference_image_placeholder": "Upload reference images to guide the generated result",
       "some_images_failed_to_upload": "Some images failed to upload, please delete them and re-upload",
       "prompt_too_long": "Prompt is too long, please delete some content"
     },

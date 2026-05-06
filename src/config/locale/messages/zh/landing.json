@@ -96,14 +96,14 @@
     "show_theme": false,
     "show_locale": true,
     "topbanner": {
-      "text": "OneAIHub 是你的 AI 对话、图片生成、音乐创作和积分工作台。"
+      "text": "OneAIHub 将 AI 对话、图片生成和音乐创作整合到一个创意工作台。"
     }
   },
   "footer": {
     "id": "footer",
     "brand": {
       "title": "OneAIHub",
-      "description": "一站式 AI 平台，支持 AI 对话、图片生成、音乐创作、积分和创意工作流。",
+      "description": "一站式 AI 平台，支持 AI 对话、图片生成、音乐创作和创意工作流。",
       "logo": {
         "src": "/logo.png",
         "alt": "OneAIHub",
@@ -173,6 +173,11 @@
               "target": "_self"
             },
             {
+              "title": "可接受使用政策",
+              "url": "/acceptable-use-policy",
+              "target": "_self"
+            },
+            {
               "title": "联系支持",
               "url": "mailto:support@oneaihub.online",
               "target": "_self"
@@ -200,9 +205,14 @@
         {
           "title": "服务条款",
           "url": "/terms-of-service"
+        },
+        {
+          "title": "可接受使用政策",
+          "url": "/acceptable-use-policy"
         }
       ]
     },
+    "show_built_with": false,
     "show_theme": false,
     "show_locale": true
   }

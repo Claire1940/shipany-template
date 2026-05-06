@@ -96,14 +96,14 @@
     "show_theme": false,
     "show_locale": true,
     "topbanner": {
-      "text": "OneAIHub is your all-in-one workspace for AI chat, image generation, music creation, and credits."
+      "text": "OneAIHub brings AI chat, image generation, and music creation into one creative workspace."
     }
   },
   "footer": {
     "id": "footer",
     "brand": {
       "title": "OneAIHub",
-      "description": "An all-in-one AI platform for chat, image generation, music creation, credits, and creative workflows.",
+      "description": "An all-in-one AI platform for chat, image generation, music creation, and creative workflows.",
       "logo": {
         "src": "/logo.png",
         "alt": "OneAIHub",
@@ -173,6 +173,11 @@
               "target": "_self"
             },
             {
+              "title": "Acceptable Use Policy",
+              "url": "/acceptable-use-policy",
+              "target": "_self"
+            },
+            {
               "title": "Contact Support",
               "url": "mailto:support@oneaihub.online",
               "target": "_self"
@@ -200,9 +205,14 @@
         {
           "title": "Terms of Service",
           "url": "/terms-of-service"
+        },
+        {
+          "title": "Acceptable Use Policy",
+          "url": "/acceptable-use-policy"
         }
       ]
     },
+    "show_built_with": false,
     "show_theme": false,
     "show_locale": true
   }

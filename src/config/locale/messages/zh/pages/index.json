@@ -12,13 +12,13 @@
         "id": "hero",
         "title": "一站式 AI 对话、图片与音乐生成平台",
         "highlight_text": "一站式 AI",
-        "description": "在 OneAIHub 中完成 AI 对话、图片生成、音乐创作和创意工作流管理。",
+        "description": "在 OneAIHub 的创意工作台中完成 AI 对话、图片生成和音乐创作。",
         "announcement": {
           "badge": "全新",
           "title": "OneAIHub 将对话、图片和音乐 AI 工具集中到一个工作台",
           "url": "/chat"
         },
-        "tip": "注册即可从免费积分开始创作，需要更多用量时再升级。",
+        "tip": "先在一个工作台开始创作，需求增加时再升级。",
         "buttons": [
           {
             "title": "开始创作",
@@ -39,14 +39,14 @@
         "avatars_tip": "在同一个工作台完成 AI 对话、图片和音乐创作",
         "show_award": false,
         "image": {
-          "src": "/imgs/features/admin.png",
+          "src": "/imgs/features/oneaihub-workspace.png",
           "alt": "OneAIHub 工作台预览",
           "width": 1200,
           "height": 800
         },
         "image_invert": {
-          "src": "/imgs/features/admin-dark.png",
-          "alt": "OneAIHub 暗色工作台预览",
+          "src": "/imgs/features/oneaihub-workspace.png",
+          "alt": "OneAIHub 工作台预览",
           "width": 1200,
           "height": 800
         },
@@ -61,35 +61,35 @@
           {
             "title": "AI 对话",
             "image": {
-              "src": "/imgs/logos/nextjs.svg",
+              "src": "/imgs/features/oneaihub-chat.png",
               "alt": "AI 对话"
             }
           },
           {
             "title": "AI 图片",
             "image": {
-              "src": "/imgs/logos/react.svg",
+              "src": "/imgs/features/oneaihub-image.png",
               "alt": "AI 图片"
             }
           },
           {
             "title": "AI 音乐",
             "image": {
-              "src": "/imgs/logos/tailwindcss.svg",
+              "src": "/imgs/features/oneaihub-music.png",
               "alt": "AI 音乐"
             }
           },
           {
             "title": "积分",
             "image": {
-              "src": "/imgs/logos/shadcn.svg",
+              "src": "/imgs/features/oneaihub-credits.png",
               "alt": "积分"
             }
           },
           {
             "title": "历史记录",
             "image": {
-              "src": "/imgs/logos/vercel.svg",
+              "src": "/imgs/features/oneaihub-history.png",
               "alt": "历史记录"
             }
           }
@@ -100,9 +100,9 @@
         "id": "introduce",
         "title": "OneAIHub 是什么？",
         "label": "一站式 AI 工作台",
-        "description": "OneAIHub 将 AI 对话、图片生成、音乐生成、积分系统和活动历史集中在一个创意工作台。",
+        "description": "OneAIHub 将 AI 对话、图片生成和音乐生成集中在一个创意工作台。",
         "image": {
-          "src": "/imgs/features/landing-page.png",
+          "src": "/imgs/features/oneaihub-flow.png",
           "alt": "OneAIHub 产品概览"
         },
         "items": [
@@ -111,7 +111,7 @@
             "description": "用强大的 AI 模型完成提问、头脑风暴、写作、推理、代码和创意探索。",
             "icon": "RiMessage2Line",
             "image": {
-              "src": "/imgs/features/1.png",
+              "src": "/imgs/features/oneaihub-chat.png",
               "alt": "AI 对话"
             }
           },
@@ -120,7 +120,7 @@
             "description": "把文字提示转成概念图、头像、产品视觉、社交媒体素材和创意作品。",
             "icon": "RiImage2Line",
             "image": {
-              "src": "/imgs/features/2.png",
+              "src": "/imgs/features/oneaihub-image.png",
               "alt": "AI 图片生成"
             }
           },
@@ -129,17 +129,17 @@
             "description": "通过简单文字提示生成歌曲、旋律和背景音乐。",
             "icon": "RiMusic2Line",
             "image": {
-              "src": "/imgs/features/3.png",
+              "src": "/imgs/features/oneaihub-music.png",
               "alt": "AI 音乐生成"
             }
           },
           {
-            "title": "积分和活动历史",
-            "description": "在多个 AI 工具间共用积分，并查看对话、图片、音乐生成历史。",
+            "title": "可复用的创作上下文",
+            "description": "把提示词和生成结果整理在一起，方便在同一个工作流里持续迭代。",
             "icon": "RiCoinsLine",
             "image": {
-              "src": "/imgs/features/4.png",
-              "alt": "积分和活动历史"
+              "src": "/imgs/features/oneaihub-flow.png",
+              "alt": "可复用的创作上下文"
             }
           }
         ],
@@ -157,25 +157,25 @@
             "description": "从对话到图片再到音乐，围绕同一个创意工作流持续推进。",
             "icon": "RiRobot2Line",
             "image": {
-              "src": "/imgs/features/user-billing.png",
+              "src": "/imgs/features/oneaihub-workspace.png",
               "alt": "统一 AI 工作台"
             }
           },
           {
-            "title": "基于积分的使用方式",
-            "description": "先用试用积分体验，根据创作需求再增加更多用量。",
+            "title": "适合不同工作量的简单套餐",
+            "description": "从轻量使用开始，按创作需求升级，并选择适合你的套餐。",
             "icon": "RiCoinsLine",
             "image": {
-              "src": "/imgs/features/admin-settings.png",
-              "alt": "积分使用方式"
+              "src": "/imgs/features/oneaihub-credits.png",
+              "alt": "灵活套餐"
             }
           },
           {
             "title": "为创意工作流设计",
-            "description": "把提示词、生成结果和任务历史整理在一起，方便持续迭代。",
+            "description": "从想法到图片再到声音都在同一个地方完成，并且便于回看和继续创作。",
             "icon": "RiSparkling2Line",
             "image": {
-              "src": "/imgs/features/landing-page.png",
+              "src": "/imgs/features/oneaihub-flow.png",
               "alt": "创意 AI 工作流"
             }
           }
@@ -187,7 +187,7 @@
         "title": "四步开始使用 OneAIHub",
         "description": "用一个简单流程体验 AI 对话、图片和音乐生成：",
         "image": {
-          "src": "/imgs/features/1.png",
+          "src": "/imgs/features/oneaihub-flow.png",
           "alt": "OneAIHub 使用流程"
         },
         "image_position": "left",
@@ -197,32 +197,32 @@
             "title": "登录账户",
             "description": "创建账户，进入你的 OneAIHub AI 工作台。",
             "image": {
-              "src": "/imgs/features/5.png",
+              "src": "/imgs/features/oneaihub-workspace.png",
               "alt": "登录账户"
             }
           },
           {
             "title": "选择 AI 工具",
-            "description": "根据任务选择 AI 对话、AI 图片生成或 AI 音乐生成。",
+            "description": "根据当前任务选择 AI 对话、AI 图片生成器或 AI 音乐生成器。",
             "image": {
-              "src": "/imgs/features/6.png",
+              "src": "/imgs/features/oneaihub-chat.png",
               "alt": "选择 AI 工具"
             }
           },
           {
             "title": "使用积分创作",
-            "description": "用积分提交提示词，生成回答、图片和音乐。",
+            "description": "提交提示词生成结果，并按你的工作量选择合适的使用方案。",
             "image": {
-              "src": "/imgs/features/7.png",
+              "src": "/imgs/features/oneaihub-credits.png",
               "alt": "使用积分创作"
             }
           },
           {
-            "title": "查看历史记录",
-            "description": "随时回到之前的对话和 AI 任务，继续使用或复用结果。",
+            "title": "复用已有结果",
+            "description": "需要继续创作、参考旧结果或迭代想法时，可以回到之前的工作继续推进。",
             "image": {
-              "src": "/imgs/features/8.png",
-              "alt": "查看历史记录"
+              "src": "/imgs/features/oneaihub-history.png",
+              "alt": "复用结果"
             }
           }
         ],
@@ -249,19 +249,19 @@
             "icon": "RiMusic2Line"
           },
           {
-            "title": "积分制使用",
-            "description": "在多个 AI 工具间共用一套积分，用量增长时再购买更多积分。",
+            "title": "图生图",
+            "description": "上传参考图来引导生成方向，适合改图、变体和视觉探索。",
             "icon": "RiCoinsLine"
           },
           {
-            "title": "活动历史",
-            "description": "从账户中查看对话、图片、音乐任务、积分和支付记录。",
+            "title": "创意工作台",
+            "description": "把提示词、生成素材和进行中的想法放在一个地方持续打磨。",
             "icon": "RiHistoryLine"
           },
           {
-            "title": "后台运营",
-            "description": "通过后台管理用户、积分、支付、AI 任务和供应商配置。",
-            "icon": "RiSettings3Line"
+            "title": "灵活套餐",
+            "description": "可按需选择一次性积分包、月付方案或年付方案。",
+            "icon": "RiSparkling2Line"
           }
         ]
       },
@@ -285,79 +285,18 @@
         ],
         "className": "bg-muted"
       },
-      "testimonials": {
-        "id": "testimonials",
-        "title": "创作者如何使用 OneAIHub",
-        "description": "适合在想法、视觉和声音之间持续切换的创意工作台。",
-        "items": [
-          {
-            "name": "Maya Chen",
-            "role": "内容创作者",
-            "quote": "我可以在同一个工作台里构思营销活动、生成概念图，再继续探索背景音乐方向。",
-            "image": {
-              "src": "/imgs/avatars/1.png",
-              "alt": "maya"
-            }
-          },
-          {
-            "name": "Leo Park",
-            "role": "产品设计师",
-            "quote": "OneAIHub 让我从文字想法快速推进到视觉概念，不用整天切换工具。",
-            "image": {
-              "src": "/imgs/avatars/2.png",
-              "alt": "leo"
-            }
-          },
-          {
-            "name": "Nina Brooks",
-            "role": "独立开发者",
-            "quote": "统一积分模式让我能先测试对话、图片和音乐，再决定要把哪个方向扩大。",
-            "image": {
-              "src": "/imgs/avatars/3.png",
-              "alt": "nina"
-            }
-          },
-          {
-            "name": "Owen Liu",
-            "role": "市场负责人",
-            "quote": "我们的团队用 OneAIHub 探索文案、创意方向和上线素材。",
-            "image": {
-              "src": "/imgs/avatars/4.png",
-              "alt": "owen"
-            }
-          },
-          {
-            "name": "Sara Miller",
-            "role": "音乐创作者",
-            "quote": "当提示词和生成结果能和其他 AI 任务放在一起时，文字生成音乐的流程更好管理。",
-            "image": {
-              "src": "/imgs/avatars/5.png",
-              "alt": "sara"
-            }
-          },
-          {
-            "name": "Alex Stone",
-            "role": "AI 探索者",
-            "quote": "它是一个很直接的起点，可以从一个账户尝试多种 AI 工具。",
-            "image": {
-              "src": "/imgs/avatars/6.png",
-              "alt": "alex"
-            }
-          }
-        ]
-      },
       "faq": {
         "id": "faq",
         "title": "常见问题",
-        "description": "了解 OneAIHub 如何帮助你使用对话、图片、音乐和积分进行创作。",
+        "description": "了解 OneAIHub 的使用方式、计费方式以及如何获得支持。",
         "items": [
           {
             "question": "OneAIHub 是什么？",
-            "answer": "OneAIHub 是一站式 AI 平台，提供 AI 对话、AI 图片生成、AI 音乐生成、积分和创意 AI 工作流。"
+            "answer": "OneAIHub 是一站式 AI 平台，提供 AI 对话、AI 图片生成、AI 音乐生成和创意工作流。"
           },
           {
             "question": "OneAIHub 包含哪些 AI 工具？",
-            "answer": "第一版聚焦 AI 对话、AI 图片生成器和 AI 音乐生成器，并支持账户历史和积分制使用。"
+            "answer": "第一版聚焦 AI 对话、AI 图片生成器和 AI 音乐生成器，并提供适合不同使用量的套餐。"
           },
           {
             "question": "使用 AI 工具需要积分吗？",
@@ -368,19 +307,19 @@
             "answer": "可以。你可以描述想要的视觉或音乐方向，提交提示词后在账户中查看生成结果。"
           },
           {
-            "question": "在哪里查看之前的 AI 任务？",
-            "answer": "活动页面会记录你的对话和 AI 生成任务，方便之后继续查看结果。"
+            "question": "订阅和取消如何处理？",
+            "answer": "订阅型套餐可以在 Billing 页面管理，活跃订阅可在账户中取消，或通过 Creem Customer Portal 处理。"
           },
           {
-            "question": "支付和积分怎么运作？",
-            "answer": "价格套餐和积分包可以在需要更高用量时增加积分，用于 AI 对话、图片和音乐生成。"
+            "question": "退款和支持如何处理？",
+            "answer": "如果你需要支付帮助或提交退款审核，请联系 support@oneaihub.online。退款请求会按购买条款审核，支持会在 3 个工作日内回复。"
           }
         ]
       },
       "cta": {
         "id": "cta",
         "title": "开始使用 OneAIHub 创作",
-        "description": "用一个工作台完成 AI 对话、图片生成、音乐创作、积分和活动历史管理。",
+        "description": "用一个工作台完成 AI 对话、图片生成和音乐创作。",
         "buttons": [
           {
             "title": "开始创作",
@@ -401,7 +340,7 @@
       "subscribe": {
         "id": "subscribe",
         "title": "获取 OneAIHub 更新",
-        "description": "接收 AI 对话、图片生成、音乐生成和积分功能的产品动态。",
+        "description": "接收 AI 对话、图片生成、音乐生成和工作流改进的产品动态。",
         "submit": {
           "input": {
             "placeholder": "输入邮箱"

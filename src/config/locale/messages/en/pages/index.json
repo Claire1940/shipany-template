@@ -12,13 +12,13 @@
         "id": "hero",
         "title": "All-in-One AI Platform for Chat, Images, and Music",
         "highlight_text": "All-in-One AI",
-        "description": "Use OneAIHub to chat with AI, generate images, create music, and manage creative AI workflows in one place.",
+        "description": "Use OneAIHub to chat with AI, generate images, and create music in one creative workspace.",
         "announcement": {
           "badge": "New",
           "title": "OneAIHub brings chat, image, and music AI tools together",
           "url": "/chat"
         },
-        "tip": "Start creating with free credits, then upgrade when you need more.",
+        "tip": "Start creating in one workspace, then upgrade when you need more capacity.",
         "buttons": [
           {
             "title": "Start Creating",
@@ -39,14 +39,14 @@
         "avatars_tip": "Create with AI chat, images, and music in one workspace",
         "show_award": false,
         "image": {
-          "src": "/imgs/features/admin.png",
+          "src": "/imgs/features/oneaihub-workspace.png",
           "alt": "OneAIHub workspace preview",
           "width": 1200,
           "height": 800
         },
         "image_invert": {
-          "src": "/imgs/features/admin-dark.png",
-          "alt": "OneAIHub dark workspace preview",
+          "src": "/imgs/features/oneaihub-workspace.png",
+          "alt": "OneAIHub workspace preview",
           "width": 1200,
           "height": 800
         },
@@ -62,35 +62,35 @@
           {
             "title": "AI Chat",
             "image": {
-              "src": "/imgs/logos/nextjs.svg",
+              "src": "/imgs/features/oneaihub-chat.png",
               "alt": "AI Chat"
             }
           },
           {
             "title": "AI Image",
             "image": {
-              "src": "/imgs/logos/react.svg",
+              "src": "/imgs/features/oneaihub-image.png",
               "alt": "AI Image"
             }
           },
           {
             "title": "AI Music",
             "image": {
-              "src": "/imgs/logos/tailwindcss.svg",
+              "src": "/imgs/features/oneaihub-music.png",
               "alt": "AI Music"
             }
           },
           {
             "title": "Credits",
             "image": {
-              "src": "/imgs/logos/shadcn.svg",
+              "src": "/imgs/features/oneaihub-credits.png",
               "alt": "Credits"
             }
           },
           {
             "title": "History",
             "image": {
-              "src": "/imgs/logos/vercel.svg",
+              "src": "/imgs/features/oneaihub-history.png",
               "alt": "History"
             }
           }
@@ -101,9 +101,9 @@
         "id": "introduce",
         "title": "What is OneAIHub?",
         "label": "All-in-One AI Workspace",
-        "description": "OneAIHub brings AI chat, image generation, music generation, credits, and activity history into a single creative workspace.",
+        "description": "OneAIHub brings AI chat, image generation, and music generation into a single creative workspace.",
         "image": {
-          "src": "/imgs/features/landing-page.png",
+          "src": "/imgs/features/oneaihub-flow.png",
           "alt": "OneAIHub product overview"
         },
         "items": [
@@ -112,7 +112,7 @@
             "description": "Ask questions, brainstorm, write, reason, and explore creative tasks with powerful AI models.",
             "icon": "RiMessage2Line",
             "image": {
-              "src": "/imgs/features/1.png",
+              "src": "/imgs/features/oneaihub-chat.png",
               "alt": "AI Chat"
             }
           },
@@ -121,7 +121,7 @@
             "description": "Turn prompts into visuals for concepts, avatars, product ideas, social posts, and creative projects.",
             "icon": "RiImage2Line",
             "image": {
-              "src": "/imgs/features/2.png",
+              "src": "/imgs/features/oneaihub-image.png",
               "alt": "AI Image generation"
             }
           },
@@ -130,17 +130,17 @@
             "description": "Create songs, melodies, and background music from simple text prompts.",
             "icon": "RiMusic2Line",
             "image": {
-              "src": "/imgs/features/3.png",
+              "src": "/imgs/features/oneaihub-music.png",
               "alt": "AI Music generation"
             }
           },
           {
-            "title": "Credits and activity history",
-            "description": "Use credits across AI tools and review your chat, image, and music generation history.",
+            "title": "Reusable creative context",
+            "description": "Keep your prompts and generated results organized so you can continue creative work without switching tools.",
             "icon": "RiCoinsLine",
             "image": {
-              "src": "/imgs/features/4.png",
-              "alt": "Credits and activity history"
+              "src": "/imgs/features/oneaihub-flow.png",
+              "alt": "Reusable creative context"
             }
           }
         ],
@@ -158,25 +158,25 @@
             "description": "Move from chat to images to music without rebuilding your workflow in different apps.",
             "icon": "RiRobot2Line",
             "image": {
-              "src": "/imgs/features/user-billing.png",
+              "src": "/imgs/features/oneaihub-workspace.png",
               "alt": "Unified AI workspace"
             }
           },
           {
-            "title": "Credit-based usage",
-            "description": "Start with trial credits and scale your creative work when you need more capacity.",
+            "title": "Simple plans for different workloads",
+            "description": "Start small, upgrade when needed, and choose the plan that matches your creative workflow.",
             "icon": "RiCoinsLine",
             "image": {
-              "src": "/imgs/features/admin-settings.png",
-              "alt": "Credit-based usage"
+              "src": "/imgs/features/oneaihub-credits.png",
+              "alt": "Flexible plans"
             }
           },
           {
             "title": "Built for creative workflows",
-            "description": "Keep prompts, generated results, and task history organized for repeatable AI production.",
+            "description": "Move from idea to image to sound in one place and keep your work easy to revisit.",
             "icon": "RiSparkling2Line",
             "image": {
-              "src": "/imgs/features/landing-page.png",
+              "src": "/imgs/features/oneaihub-flow.png",
               "alt": "Creative AI workflow"
             }
           }
@@ -188,7 +188,7 @@
         "title": "Create with OneAIHub in four steps",
         "description": "A simple workflow for exploring chat, image, and music generation:",
         "image": {
-          "src": "/imgs/features/1.png",
+          "src": "/imgs/features/oneaihub-flow.png",
           "alt": "OneAIHub workflow"
         },
         "image_position": "left",
@@ -198,32 +198,32 @@
             "title": "Sign in",
             "description": "Create an account and get ready to use your OneAIHub workspace.",
             "image": {
-              "src": "/imgs/features/5.png",
+              "src": "/imgs/features/oneaihub-workspace.png",
               "alt": "Sign in"
             }
           },
           {
             "title": "Choose an AI tool",
-            "description": "Start with AI Chat, AI Image Generator, or AI Music Generator based on your task.",
+            "description": "Start with AI Chat, AI Image Generator, or AI Music Generator based on the kind of work you need to create.",
             "image": {
-              "src": "/imgs/features/6.png",
+              "src": "/imgs/features/oneaihub-chat.png",
               "alt": "Choose an AI tool"
             }
           },
           {
             "title": "Create with credits",
-            "description": "Use credits to generate responses, visuals, and music from your prompts.",
+            "description": "Submit your prompt, generate results, and scale usage with a plan that fits your workload.",
             "image": {
-              "src": "/imgs/features/7.png",
+              "src": "/imgs/features/oneaihub-credits.png",
               "alt": "Create with credits"
             }
           },
           {
-            "title": "Review your history",
-            "description": "Return to previous chats and AI tasks whenever you need to continue or reuse results.",
+            "title": "Reuse your results",
+            "description": "Return to previous work when you want to iterate on an idea, reference a result, or continue a creative session.",
             "image": {
-              "src": "/imgs/features/8.png",
-              "alt": "Review history"
+              "src": "/imgs/features/oneaihub-history.png",
+              "alt": "Reuse results"
             }
           }
         ],
@@ -250,19 +250,19 @@
             "icon": "RiMusic2Line"
           },
           {
-            "title": "Credit-based access",
-            "description": "Use one credit system across AI tools and top up when your creative workload grows.",
+            "title": "Image to Image",
+            "description": "Upload references to guide image generation for edits, variations, and visual direction.",
             "icon": "RiCoinsLine"
           },
           {
-            "title": "Activity history",
-            "description": "Track chats, generated images, music tasks, credits, and payments from your account.",
+            "title": "Creative workspace",
+            "description": "Keep your prompts, generated assets, and ongoing ideas in one place while you iterate.",
             "icon": "RiHistoryLine"
           },
           {
-            "title": "Admin operations",
-            "description": "Manage users, credits, payments, AI tasks, and provider settings from the admin dashboard.",
-            "icon": "RiSettings3Line"
+            "title": "Flexible plans",
+            "description": "Choose between a one-time credit pack, a monthly plan, or a yearly plan based on your usage.",
+            "icon": "RiSparkling2Line"
           }
         ]
       },
@@ -286,79 +286,18 @@
         ],
         "className": "bg-muted"
       },
-      "testimonials": {
-        "id": "testimonials",
-        "title": "How creators use OneAIHub",
-        "description": "A workspace for people who move between ideas, visuals, and sound.",
-        "items": [
-          {
-            "name": "Maya Chen",
-            "role": "Content Creator",
-            "quote": "I can brainstorm a campaign, generate concept images, and outline background music ideas in the same workspace.",
-            "image": {
-              "src": "/imgs/avatars/1.png",
-              "alt": "maya"
-            }
-          },
-          {
-            "name": "Leo Park",
-            "role": "Product Designer",
-            "quote": "OneAIHub helps me move from written ideas to visual concepts without switching tools all day.",
-            "image": {
-              "src": "/imgs/avatars/2.png",
-              "alt": "leo"
-            }
-          },
-          {
-            "name": "Nina Brooks",
-            "role": "Indie Maker",
-            "quote": "The shared credits model makes it easy to test chat, images, and music before deciding what to scale.",
-            "image": {
-              "src": "/imgs/avatars/3.png",
-              "alt": "nina"
-            }
-          },
-          {
-            "name": "Owen Liu",
-            "role": "Marketing Lead",
-            "quote": "Our team uses OneAIHub to explore copy, creative directions, and assets for launches.",
-            "image": {
-              "src": "/imgs/avatars/4.png",
-              "alt": "owen"
-            }
-          },
-          {
-            "name": "Sara Miller",
-            "role": "Music Creator",
-            "quote": "Text-to-music workflows are easier when I can keep prompts and results together with my other AI tasks.",
-            "image": {
-              "src": "/imgs/avatars/5.png",
-              "alt": "sara"
-            }
-          },
-          {
-            "name": "Alex Stone",
-            "role": "AI Explorer",
-            "quote": "It is a simple starting point for experimenting with multiple AI tools from one account.",
-            "image": {
-              "src": "/imgs/avatars/6.png",
-              "alt": "alex"
-            }
-          }
-        ]
-      },
       "faq": {
         "id": "faq",
         "title": "Frequently Asked Questions",
-        "description": "Learn how OneAIHub helps you create with chat, images, music, and credits.",
+        "description": "Learn how OneAIHub works, how billing is handled, and how to get support.",
         "items": [
           {
             "question": "What is OneAIHub?",
-            "answer": "OneAIHub is an all-in-one AI platform for AI chat, AI image generation, AI music generation, credits, and creative AI workflows."
+            "answer": "OneAIHub is an all-in-one AI platform for AI chat, AI image generation, AI music generation, and creative workflows."
           },
           {
             "question": "What AI tools are included?",
-            "answer": "The first version focuses on AI Chat, AI Image Generator, and AI Music Generator, with account history and credit-based usage."
+            "answer": "The first version focuses on AI Chat, AI Image Generator, and AI Music Generator, with plans designed for different usage levels."
           },
           {
             "question": "Do I need credits to use AI tools?",
@@ -369,19 +308,19 @@
             "answer": "Yes. You can describe the visual or music idea you want, submit a prompt, and review generated results in your account."
           },
           {
-            "question": "Where can I find previous AI tasks?",
-            "answer": "Your activity pages keep track of chats and AI generation tasks so you can revisit results later."
+            "question": "How do subscriptions and cancellations work?",
+            "answer": "Recurring plans can be managed from your Billing settings, and active subscriptions can be canceled from your account or through the Creem customer portal."
           },
           {
-            "question": "How do payments and credits work?",
-            "answer": "Pricing plans and credit packs let you add more credits when you need higher usage for chat, image, and music generation."
+            "question": "How do refunds and support work?",
+            "answer": "If you need billing help or want to request a refund review, contact support@oneaihub.online. Refund requests are reviewed according to the purchase terms, and support replies within 3 business days."
           }
         ]
       },
       "cta": {
         "id": "cta",
         "title": "Start creating with OneAIHub",
-        "description": "Use one workspace for AI chat, image generation, music creation, credits, and activity history.",
+        "description": "Use one workspace for AI chat, image generation, and music creation.",
         "buttons": [
           {
             "title": "Start Creating",
@@ -402,7 +341,7 @@
       "subscribe": {
         "id": "subscribe",
         "title": "Get OneAIHub updates",
-        "description": "Receive product updates for AI chat, image generation, music generation, and credits.",
+        "description": "Receive product updates for AI chat, image generation, music generation, and workflow improvements.",
         "submit": {
           "input": {
             "placeholder": "Enter your email"

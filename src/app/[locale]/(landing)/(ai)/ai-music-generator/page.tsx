@@ -30,8 +30,8 @@ export default async function AiMusicGeneratorPage({
         title: t.raw('page.title'),
         description: t.raw('page.description'),
         background_image: {
-          src: '/imgs/bg/tree.jpg',
-          alt: 'hero background',
+          src: '/imgs/features/oneaihub-music.png',
+          alt: 'OneAIHub AI music generator background',
         },
       },
       generator: {

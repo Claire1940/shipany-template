@@ -1,15 +1,15 @@
 {
   "metadata": {
     "title": "AI 图片生成器",
-    "description": "使用 AI 模型生成图片，支持文本到图片和图片到图片。"
+    "description": "使用 OneAIHub 生成头像、产品图、插画、概念图、社媒素材等创意图片。"
   },
   "page": {
     "title": "AI 图片生成器",
-    "description": "使用 AI 模型生成图片，支持文本到图片和图片到图片。"
+    "description": "把文本提示词和参考图片转化为适合创作、产品构思、头像、概念设计和社交媒体的视觉素材。违规、露骨或具有欺骗性的请求会被拦截。"
   },
   "generator": {
     "title": "图片生成器",
-    "description": "使用 AI 模型生成图片，支持文本到图片和图片到图片。",
+    "description": "通过提示词生成图片，也可以上传参考图来引导生成结果。仅允许合法、非露骨、非欺骗性的请求。",
     "tabs": {
       "text-to-image": "文生图",
       "image-to-image": "图生图"
@@ -20,9 +20,9 @@
       "select_provider": "选择服务商",
       "select_model": "选择模型",
       "prompt": "提示词",
-      "prompt_placeholder": "描述图片的细节，如颜色、形状、纹理等",
+      "prompt_placeholder": "描述图片主体、风格、光线、构图、色彩和用途。不要请求 NSFW、deepfake 或换脸内容。",
       "reference_image": "参考图片",
-      "reference_image_placeholder": "上传参考图片，支持多张",
+      "reference_image_placeholder": "上传参考图片来引导生成结果",
       "some_images_failed_to_upload": "一些图片上传失败，请删除它们并重新上传",
       "prompt_too_long": "提示词太长，请删除一些内容"
     },

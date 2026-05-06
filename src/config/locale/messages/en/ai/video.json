@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "AI Video Generator",
-    "description": "Generate videos with AI models, support text-to-video, image-to-video and video-to-video."
+    "description": "Generate videos with AI models for text-to-video, image-to-video, and video-to-video workflows. Unsafe, explicit, or deceptive requests are blocked."
   },
   "page": {
     "title": "AI Video Generator",
@@ -9,7 +9,7 @@
   },
   "generator": {
     "title": "Video Generator",
-    "description": "Generate videos with AI models, support text-to-video, image-to-video and video-to-video.",
+    "description": "Generate videos with AI models for text-to-video, image-to-video, and video-to-video workflows. Only lawful, non-explicit, non-deceptive requests are allowed.",
     "tabs": {
       "text-to-video": "Text to Video",
       "image-to-video": "Image to Video",
@@ -21,7 +21,7 @@
       "select_provider": "Select Provider",
       "select_model": "Select Model",
       "prompt": "Prompt",
-      "prompt_placeholder": "Describe the video content, such as scene, action, style, etc.",
+      "prompt_placeholder": "Describe the video content, such as scene, action, and style. Do not request NSFW, deepfake, or face-swap content.",
       "reference_image": "Reference Image",
       "reference_image_placeholder": "Upload a reference image for video generation",
       "reference_video": "Reference Video URL",
@@ -44,4 +44,3 @@
     "no_videos_generated": "No Videos Generated"
   }
 }
-
