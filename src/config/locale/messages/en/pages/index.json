@@ -39,19 +39,19 @@
         "avatars_tip": "Create with AI chat, images, and music in one workspace",
         "show_award": false,
         "image": {
-          "src": "/imgs/features/oneaihub-workspace.png",
+          "src": "/imgs/features/oneaihub-workspace.png?v=20260506r",
           "alt": "OneAIHub workspace preview",
           "width": 1200,
           "height": 800
         },
         "image_invert": {
-          "src": "/imgs/features/oneaihub-workspace.png",
+          "src": "/imgs/features/oneaihub-workspace.png?v=20260506r",
           "alt": "OneAIHub workspace preview",
           "width": 1200,
           "height": 800
         },
         "background_image": {
-          "src": "/imgs/bg/tree.jpg",
+          "src": "/imgs/bg/tree.jpg?v=20260506r",
           "alt": "OneAIHub hero background"
         }
       },
@@ -62,35 +62,35 @@
           {
             "title": "AI Chat",
             "image": {
-              "src": "/imgs/features/oneaihub-chat.png",
+              "src": "/imgs/features/oneaihub-chat.png?v=20260506r",
               "alt": "AI Chat"
             }
           },
           {
             "title": "AI Image",
             "image": {
-              "src": "/imgs/features/oneaihub-image.png",
+              "src": "/imgs/features/oneaihub-image.png?v=20260506r",
               "alt": "AI Image"
             }
           },
           {
             "title": "AI Music",
             "image": {
-              "src": "/imgs/features/oneaihub-music.png",
+              "src": "/imgs/features/oneaihub-music.png?v=20260506r",
               "alt": "AI Music"
             }
           },
           {
             "title": "Credits",
             "image": {
-              "src": "/imgs/features/oneaihub-credits.png",
+              "src": "/imgs/features/oneaihub-credits.png?v=20260506r",
               "alt": "Credits"
             }
           },
           {
             "title": "History",
             "image": {
-              "src": "/imgs/features/oneaihub-history.png",
+              "src": "/imgs/features/oneaihub-history.png?v=20260506r",
               "alt": "History"
             }
           }
@@ -103,7 +103,7 @@
         "label": "All-in-One AI Workspace",
         "description": "OneAIHub brings AI chat, image generation, and music generation into a single creative workspace.",
         "image": {
-          "src": "/imgs/features/oneaihub-flow.png",
+          "src": "/imgs/features/oneaihub-flow.png?v=20260506r",
           "alt": "OneAIHub product overview"
         },
         "items": [
@@ -112,7 +112,7 @@
             "description": "Ask questions, brainstorm, write, reason, and explore creative tasks with powerful AI models.",
             "icon": "RiMessage2Line",
             "image": {
-              "src": "/imgs/features/oneaihub-chat.png",
+              "src": "/imgs/features/oneaihub-chat.png?v=20260506r",
               "alt": "AI Chat"
             }
           },
@@ -121,7 +121,7 @@
             "description": "Turn prompts into visuals for concepts, avatars, product ideas, social posts, and creative projects.",
             "icon": "RiImage2Line",
             "image": {
-              "src": "/imgs/features/oneaihub-image.png",
+              "src": "/imgs/features/oneaihub-image.png?v=20260506r",
               "alt": "AI Image generation"
             }
           },
@@ -130,7 +130,7 @@
             "description": "Create songs, melodies, and background music from simple text prompts.",
             "icon": "RiMusic2Line",
             "image": {
-              "src": "/imgs/features/oneaihub-music.png",
+              "src": "/imgs/features/oneaihub-music.png?v=20260506r",
               "alt": "AI Music generation"
             }
           },
@@ -139,7 +139,7 @@
             "description": "Keep your prompts and generated results organized so you can continue creative work without switching tools.",
             "icon": "RiCoinsLine",
             "image": {
-              "src": "/imgs/features/oneaihub-flow.png",
+              "src": "/imgs/features/oneaihub-flow.png?v=20260506r",
               "alt": "Reusable creative context"
             }
           }
@@ -158,7 +158,7 @@
             "description": "Move from chat to images to music without rebuilding your workflow in different apps.",
             "icon": "RiRobot2Line",
             "image": {
-              "src": "/imgs/features/oneaihub-workspace.png",
+              "src": "/imgs/features/oneaihub-workspace.png?v=20260506r",
               "alt": "Unified AI workspace"
             }
           },
@@ -167,7 +167,7 @@
             "description": "Start small, upgrade when needed, and choose the plan that matches your creative workflow.",
             "icon": "RiCoinsLine",
             "image": {
-              "src": "/imgs/features/oneaihub-credits.png",
+              "src": "/imgs/features/oneaihub-credits.png?v=20260506r",
               "alt": "Flexible plans"
             }
           },
@@ -176,7 +176,7 @@
             "description": "Move from idea to image to sound in one place and keep your work easy to revisit.",
             "icon": "RiSparkling2Line",
             "image": {
-              "src": "/imgs/features/oneaihub-flow.png",
+              "src": "/imgs/features/oneaihub-flow.png?v=20260506r",
               "alt": "Creative AI workflow"
             }
           }
@@ -188,7 +188,7 @@
         "title": "Create with OneAIHub in four steps",
         "description": "A simple workflow for exploring chat, image, and music generation:",
         "image": {
-          "src": "/imgs/features/oneaihub-flow.png",
+          "src": "/imgs/features/oneaihub-flow.png?v=20260506r",
           "alt": "OneAIHub workflow"
         },
         "image_position": "left",
@@ -198,7 +198,7 @@
             "title": "Sign in",
             "description": "Create an account and get ready to use your OneAIHub workspace.",
             "image": {
-              "src": "/imgs/features/oneaihub-workspace.png",
+              "src": "/imgs/features/oneaihub-workspace.png?v=20260506r",
               "alt": "Sign in"
             }
           },
@@ -206,7 +206,7 @@
             "title": "Choose an AI tool",
             "description": "Start with AI Chat, AI Image Generator, or AI Music Generator based on the kind of work you need to create.",
             "image": {
-              "src": "/imgs/features/oneaihub-chat.png",
+              "src": "/imgs/features/oneaihub-chat.png?v=20260506r",
               "alt": "Choose an AI tool"
             }
           },
@@ -214,7 +214,7 @@
             "title": "Create with credits",
             "description": "Submit your prompt, generate results, and scale usage with a plan that fits your workload.",
             "image": {
-              "src": "/imgs/features/oneaihub-credits.png",
+              "src": "/imgs/features/oneaihub-credits.png?v=20260506r",
               "alt": "Create with credits"
             }
           },
@@ -222,7 +222,7 @@
             "title": "Reuse your results",
             "description": "Return to previous work when you want to iterate on an idea, reference a result, or continue a creative session.",
             "image": {
-              "src": "/imgs/features/oneaihub-history.png",
+              "src": "/imgs/features/oneaihub-history.png?v=20260506r",
               "alt": "Reuse results"
             }
           }

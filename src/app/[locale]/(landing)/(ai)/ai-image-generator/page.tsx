@@ -30,7 +30,7 @@ export default async function AiImageGeneratorPage({
         title: t.raw('page.title'),
         description: t.raw('page.description'),
         background_image: {
-          src: '/imgs/features/oneaihub-image.png',
+          src: '/imgs/features/oneaihub-image.png?v=20260506r',
           alt: 'OneAIHub AI image generator background',
         },
       },

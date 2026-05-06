@@ -39,19 +39,19 @@
         "avatars_tip": "在同一个工作台完成 AI 对话、图片和音乐创作",
         "show_award": false,
         "image": {
-          "src": "/imgs/features/oneaihub-workspace.png",
+          "src": "/imgs/features/oneaihub-workspace.png?v=20260506r",
           "alt": "OneAIHub 工作台预览",
           "width": 1200,
           "height": 800
         },
         "image_invert": {
-          "src": "/imgs/features/oneaihub-workspace.png",
+          "src": "/imgs/features/oneaihub-workspace.png?v=20260506r",
           "alt": "OneAIHub 工作台预览",
           "width": 1200,
           "height": 800
         },
         "background_image": {
-          "src": "/imgs/bg/tree.jpg",
+          "src": "/imgs/bg/tree.jpg?v=20260506r",
           "alt": "OneAIHub 首页背景"
         }
       },
@@ -61,35 +61,35 @@
           {
             "title": "AI 对话",
             "image": {
-              "src": "/imgs/features/oneaihub-chat.png",
+              "src": "/imgs/features/oneaihub-chat.png?v=20260506r",
               "alt": "AI 对话"
             }
           },
           {
             "title": "AI 图片",
             "image": {
-              "src": "/imgs/features/oneaihub-image.png",
+              "src": "/imgs/features/oneaihub-image.png?v=20260506r",
               "alt": "AI 图片"
             }
           },
           {
             "title": "AI 音乐",
             "image": {
-              "src": "/imgs/features/oneaihub-music.png",
+              "src": "/imgs/features/oneaihub-music.png?v=20260506r",
               "alt": "AI 音乐"
             }
           },
           {
             "title": "积分",
             "image": {
-              "src": "/imgs/features/oneaihub-credits.png",
+              "src": "/imgs/features/oneaihub-credits.png?v=20260506r",
               "alt": "积分"
             }
           },
           {
             "title": "历史记录",
             "image": {
-              "src": "/imgs/features/oneaihub-history.png",
+              "src": "/imgs/features/oneaihub-history.png?v=20260506r",
               "alt": "历史记录"
             }
           }
@@ -102,7 +102,7 @@
         "label": "一站式 AI 工作台",
         "description": "OneAIHub 将 AI 对话、图片生成和音乐生成集中在一个创意工作台。",
         "image": {
-          "src": "/imgs/features/oneaihub-flow.png",
+          "src": "/imgs/features/oneaihub-flow.png?v=20260506r",
           "alt": "OneAIHub 产品概览"
         },
         "items": [
@@ -111,7 +111,7 @@
             "description": "用强大的 AI 模型完成提问、头脑风暴、写作、推理、代码和创意探索。",
             "icon": "RiMessage2Line",
             "image": {
-              "src": "/imgs/features/oneaihub-chat.png",
+              "src": "/imgs/features/oneaihub-chat.png?v=20260506r",
               "alt": "AI 对话"
             }
           },
@@ -120,7 +120,7 @@
             "description": "把文字提示转成概念图、头像、产品视觉、社交媒体素材和创意作品。",
             "icon": "RiImage2Line",
             "image": {
-              "src": "/imgs/features/oneaihub-image.png",
+              "src": "/imgs/features/oneaihub-image.png?v=20260506r",
               "alt": "AI 图片生成"
             }
           },
@@ -129,7 +129,7 @@
             "description": "通过简单文字提示生成歌曲、旋律和背景音乐。",
             "icon": "RiMusic2Line",
             "image": {
-              "src": "/imgs/features/oneaihub-music.png",
+              "src": "/imgs/features/oneaihub-music.png?v=20260506r",
               "alt": "AI 音乐生成"
             }
           },
@@ -138,7 +138,7 @@
             "description": "把提示词和生成结果整理在一起，方便在同一个工作流里持续迭代。",
             "icon": "RiCoinsLine",
             "image": {
-              "src": "/imgs/features/oneaihub-flow.png",
+              "src": "/imgs/features/oneaihub-flow.png?v=20260506r",
               "alt": "可复用的创作上下文"
             }
           }
@@ -157,7 +157,7 @@
             "description": "从对话到图片再到音乐，围绕同一个创意工作流持续推进。",
             "icon": "RiRobot2Line",
             "image": {
-              "src": "/imgs/features/oneaihub-workspace.png",
+              "src": "/imgs/features/oneaihub-workspace.png?v=20260506r",
               "alt": "统一 AI 工作台"
             }
           },
@@ -166,7 +166,7 @@
             "description": "从轻量使用开始，按创作需求升级，并选择适合你的套餐。",
             "icon": "RiCoinsLine",
             "image": {
-              "src": "/imgs/features/oneaihub-credits.png",
+              "src": "/imgs/features/oneaihub-credits.png?v=20260506r",
               "alt": "灵活套餐"
             }
           },
@@ -175,7 +175,7 @@
             "description": "从想法到图片再到声音都在同一个地方完成，并且便于回看和继续创作。",
             "icon": "RiSparkling2Line",
             "image": {
-              "src": "/imgs/features/oneaihub-flow.png",
+              "src": "/imgs/features/oneaihub-flow.png?v=20260506r",
               "alt": "创意 AI 工作流"
             }
           }
@@ -187,7 +187,7 @@
         "title": "四步开始使用 OneAIHub",
         "description": "用一个简单流程体验 AI 对话、图片和音乐生成：",
         "image": {
-          "src": "/imgs/features/oneaihub-flow.png",
+          "src": "/imgs/features/oneaihub-flow.png?v=20260506r",
           "alt": "OneAIHub 使用流程"
         },
         "image_position": "left",
@@ -197,7 +197,7 @@
             "title": "登录账户",
             "description": "创建账户，进入你的 OneAIHub AI 工作台。",
             "image": {
-              "src": "/imgs/features/oneaihub-workspace.png",
+              "src": "/imgs/features/oneaihub-workspace.png?v=20260506r",
               "alt": "登录账户"
             }
           },
@@ -205,7 +205,7 @@
             "title": "选择 AI 工具",
             "description": "根据当前任务选择 AI 对话、AI 图片生成器或 AI 音乐生成器。",
             "image": {
-              "src": "/imgs/features/oneaihub-chat.png",
+              "src": "/imgs/features/oneaihub-chat.png?v=20260506r",
               "alt": "选择 AI 工具"
             }
           },
@@ -213,7 +213,7 @@
             "title": "使用积分创作",
             "description": "提交提示词生成结果，并按你的工作量选择合适的使用方案。",
             "image": {
-              "src": "/imgs/features/oneaihub-credits.png",
+              "src": "/imgs/features/oneaihub-credits.png?v=20260506r",
               "alt": "使用积分创作"
             }
           },
@@ -221,7 +221,7 @@
             "title": "复用已有结果",
             "description": "需要继续创作、参考旧结果或迭代想法时，可以回到之前的工作继续推进。",
             "image": {
-              "src": "/imgs/features/oneaihub-history.png",
+              "src": "/imgs/features/oneaihub-history.png?v=20260506r",
               "alt": "复用结果"
             }
           }
