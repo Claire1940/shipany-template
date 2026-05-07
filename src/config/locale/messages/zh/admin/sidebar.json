@@ -97,11 +97,6 @@
         "title": "设置",
         "url": "/admin/settings/general",
         "icon": "Settings"
-      },
-      {
-        "title": "API密钥",
-        "url": "/admin/apikeys",
-        "icon": "Key"
       }
     ]
   },

@@ -120,6 +120,9 @@ export function ChatGenerator() {
           }}
           status={status}
         />
+        <p className="text-muted-foreground mt-4 max-w-xl text-center text-sm">
+          {t('model_notice')}
+        </p>
       </div>
     </div>
   );

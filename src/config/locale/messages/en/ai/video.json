@@ -10,6 +10,7 @@
   "generator": {
     "title": "Video Generator",
     "description": "Generate videos with AI models for text-to-video, image-to-video, and video-to-video workflows. Only lawful, non-explicit, non-deceptive requests are allowed.",
+    "model_notice": "Model and provider names are shown for transparency. They belong to their respective owners and do not imply endorsement by or affiliation with OneAIHub. Availability, quality, and supported workflows may change by provider.",
     "tabs": {
       "text-to-video": "Text to Video",
       "image-to-video": "Image to Video",

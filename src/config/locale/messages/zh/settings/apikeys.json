@@ -8,6 +8,7 @@
   "list": {
     "title": "API 密钥",
     "empty_message": "没有 API 密钥",
+    "unavailable_message": "公开 API 访问暂未开放。在外部 API 鉴权和使用文档正式上线前，相关 API 密钥页面保持隐藏。",
     "buttons": {
       "add": "创建 API 密钥",
       "edit": "编辑",

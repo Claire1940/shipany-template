@@ -9,6 +9,7 @@
   },
   "generator": {
     "title": "Music Generator",
+    "model_notice": "Model names are shown for transparency. They belong to their respective owners and do not imply endorsement by or affiliation with OneAIHub. Availability, quality, and generation behavior may change over time.",
     "prompt": "Prompt",
     "prompt_placeholder": "Describe the genre, mood, instruments, tempo, vocals, and where the music will be used.",
     "generate": "Generate Music",

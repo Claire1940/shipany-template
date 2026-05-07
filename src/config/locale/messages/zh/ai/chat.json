@@ -90,7 +90,8 @@
   },
   "generator": {
     "title": "今天有什么可以帮到你？",
-    "input_placeholder": "你可以问我任何问题"
+    "input_placeholder": "你可以问我任何问题",
+    "model_notice": "展示模型名是为了透明说明，它们归各自权利方所有，不代表 OneAIHub 与其存在官方合作、隶属或背书关系。回答质量、速度和可用性可能因服务商而不同。"
   },
   "history": {
     "title": "历史对话",

@@ -8,6 +8,7 @@
   "list": {
     "title": "API Keys",
     "empty_message": "No API Keys",
+    "unavailable_message": "Public API access is not available yet. API key pages stay hidden until external API authentication and usage docs are officially released.",
     "buttons": {
       "add": "Create API Key",
       "edit": "Edit",

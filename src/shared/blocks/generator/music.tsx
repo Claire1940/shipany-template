@@ -498,6 +498,9 @@ export function MusicGenerator({ className, srOnlyTitle }: SongGeneratorProps) {
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
+                <div className="rounded-lg border border-border/60 bg-muted/40 p-3 text-sm text-muted-foreground">
+                  {t('generator.model_notice')}
+                </div>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
                     <Switch

@@ -10,6 +10,7 @@
   "generator": {
     "title": "Image Generator",
     "description": "Create images from prompts or guide the result with reference images. Only lawful, non-explicit, non-deceptive requests are allowed.",
+    "model_notice": "Model and provider names are shown for transparency. They belong to their respective owners and do not imply endorsement by or affiliation with OneAIHub. Availability, quality, and output format may change by provider.",
     "tabs": {
       "text-to-image": "Text to Image",
       "image-to-image": "Image to Image"
