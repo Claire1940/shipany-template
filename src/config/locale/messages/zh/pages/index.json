@@ -36,7 +36,6 @@
           }
         ],
         "show_avatars": false,
-        "avatars_tip": "在同一个工作台完成 AI 对话、图片和音乐创作",
         "show_award": false,
         "image": {
           "src": "/imgs/features/oneaihub-workspace-v20260506r.png",

@@ -36,7 +36,6 @@
           }
         ],
         "show_avatars": false,
-        "avatars_tip": "Create with AI chat, images, and music in one workspace",
         "show_award": false,
         "image": {
           "src": "/imgs/features/oneaihub-workspace-v20260506r.png",
