@@ -76,6 +76,16 @@ type ImageGeneratorTab = 'text-to-image' | 'image-to-image';
 const POLL_INTERVAL = 5000;
 const GENERATION_TIMEOUT = 180000;
 const MAX_PROMPT_LENGTH = 2000;
+const TASK_STORAGE_KEY = 'oneaihub:image-generator:task';
+
+interface PersistedImageTask {
+  taskId: string;
+  prompt: string;
+  provider: string;
+  model: string;
+  activeTab: ImageGeneratorTab;
+  generationStartTime: number;
+}
 
 const MODEL_OPTIONS = [
   {
@@ -171,6 +181,14 @@ function extractImageUrls(result: any): string[] {
     return [];
   }
 
+  if (typeof result.resultJson === 'string' && result.resultJson.trim()) {
+    try {
+      return extractImageUrls(JSON.parse(result.resultJson));
+    } catch (error) {
+      console.warn('Failed to parse provider resultJson:', error);
+    }
+  }
+
   const output = result.output ?? result.images ?? result.data;
 
   if (!output) {
@@ -205,6 +223,57 @@ function extractImageUrls(result: any): string[] {
   }
 
   return [];
+}
+
+function extractTaskImageUrls(task: BackendTask): string[] {
+  const taskInfoResult = parseTaskResult(task.taskInfo);
+  const taskResultResult = parseTaskResult(task.taskResult);
+
+  return [
+    ...extractImageUrls(taskInfoResult),
+    ...extractImageUrls(taskResultResult),
+  ].filter(Boolean);
+}
+
+function readPersistedTask(): PersistedImageTask | null {
+  if (typeof window === 'undefined') {
+    return null;
+  }
+
+  try {
+    const raw = window.sessionStorage.getItem(TASK_STORAGE_KEY);
+    if (!raw) {
+      return null;
+    }
+
+    const parsed = JSON.parse(raw) as PersistedImageTask;
+    if (
+      !parsed.taskId ||
+      !parsed.provider ||
+      !parsed.model ||
+      !parsed.generationStartTime
+    ) {
+      return null;
+    }
+
+    return parsed;
+  } catch (error) {
+    console.warn('Failed to read persisted image task:', error);
+    return null;
+  }
+}
+
+function writePersistedTask(task: PersistedImageTask | null) {
+  if (typeof window === 'undefined') {
+    return;
+  }
+
+  if (!task) {
+    window.sessionStorage.removeItem(TASK_STORAGE_KEY);
+    return;
+  }
+
+  window.sessionStorage.setItem(TASK_STORAGE_KEY, JSON.stringify(task));
 }
 
 export function ImageGenerator({
@@ -388,6 +457,7 @@ export function ImageGenerator({
     setTaskId(null);
     setGenerationStartTime(null);
     setTaskStatus(null);
+    writePersistedTask(null);
   }, []);
 
   const pollTaskStatus = useCallback(
@@ -423,8 +493,8 @@ export function ImageGenerator({
         const currentStatus = task.status as AITaskStatus;
         setTaskStatus(currentStatus);
 
-        const parsedResult = parseTaskResult(task.taskInfo);
-        const imageUrls = extractImageUrls(parsedResult);
+        const parsedTaskInfo = parseTaskResult(task.taskInfo);
+        const imageUrls = extractTaskImageUrls(task);
 
         if (currentStatus === AITaskStatus.PENDING) {
           setProgress((prev) => Math.max(prev, 20));
@@ -467,16 +537,17 @@ export function ImageGenerator({
 
           setProgress(100);
           resetTaskState();
+          await fetchUserCredits();
           return true;
         }
 
         if (currentStatus === AITaskStatus.FAILED) {
           const errorMessage =
-            parsedResult?.errorMessage || 'Generate image failed';
+            parsedTaskInfo?.errorMessage || 'Generate image failed';
           toast.error(errorMessage);
           resetTaskState();
 
-          fetchUserCredits();
+          await fetchUserCredits();
 
           return true;
         }
@@ -488,13 +559,72 @@ export function ImageGenerator({
         toast.error(`Query task failed: ${error.message}`);
         resetTaskState();
 
-        fetchUserCredits();
+        await fetchUserCredits();
 
         return true;
       }
     },
-    [generationStartTime, resetTaskState]
+    [fetchUserCredits, generationStartTime, resetTaskState]
   );
+
+  useEffect(() => {
+    if (!isMounted || user === undefined) {
+      return;
+    }
+
+    if (!user) {
+      writePersistedTask(null);
+      return;
+    }
+
+    if (taskId || isGenerating) {
+      return;
+    }
+
+    const persistedTask = readPersistedTask();
+    if (!persistedTask) {
+      return;
+    }
+
+    if (Date.now() - persistedTask.generationStartTime > GENERATION_TIMEOUT) {
+      writePersistedTask(null);
+      return;
+    }
+
+    setActiveTab(persistedTask.activeTab);
+    setProvider(persistedTask.provider);
+    setModel(persistedTask.model);
+    setPrompt(persistedTask.prompt);
+    setTaskId(persistedTask.taskId);
+    setIsGenerating(true);
+    setProgress(15);
+    setTaskStatus(AITaskStatus.PENDING);
+    setGenerationStartTime(persistedTask.generationStartTime);
+  }, [isGenerating, isMounted, taskId, user]);
+
+  useEffect(() => {
+    if (!isMounted || !taskId || !isGenerating || !generationStartTime) {
+      return;
+    }
+
+    writePersistedTask({
+      taskId,
+      prompt,
+      provider,
+      model,
+      activeTab,
+      generationStartTime,
+    });
+  }, [
+    activeTab,
+    generationStartTime,
+    isGenerating,
+    isMounted,
+    model,
+    prompt,
+    provider,
+    taskId,
+  ]);
 
   useEffect(() => {
     if (!taskId || !isGenerating) {
@@ -602,8 +732,7 @@ export function ImageGenerator({
       }
 
       if (data.status === AITaskStatus.SUCCESS && data.taskInfo) {
-        const parsedResult = parseTaskResult(data.taskInfo);
-        const imageUrls = extractImageUrls(parsedResult);
+        const imageUrls = extractTaskImageUrls(data);
 
         if (imageUrls.length > 0) {
           setGeneratedImages(
