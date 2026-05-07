@@ -35,7 +35,7 @@
             "variant": "outline"
           }
         ],
-        "show_avatars": true,
+        "show_avatars": false,
         "avatars_tip": "Create with AI chat, images, and music in one workspace",
         "show_award": false,
         "image": {
